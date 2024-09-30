@@ -1,15 +1,15 @@
-baseURL = "https://www.example.com"
+baseURL = "https://bellowaverage.github.io/"
 languageCode = "en-us"
-title = "My Digital Garden"
+title = "Chris Wang Personal Showcase"
 theme = "hugo-digital-garden-theme"
-themesdir = "../../"
-copyright = "Nigalya Ponya ©"
+themesdir = "./themes"
+copyright = "Chris Wang ©"
 
 
 [params]
-  name = "Nigalya Ponya"
-  description = "Red panda living in the eastern Himalayas."
-  initials = "NP"
+  name = "Chris Wang"
+  description = "MSDS 431 Data Engineering Assignment"
+  initials = "Chris"
   googleAnalytics = ""
 
   [[params.social]]
@@ -35,7 +35,7 @@ copyright = "Nigalya Ponya ©"
 
 [menu]
   [[menu.main]]
-    name = "Digital Garden"
+    name = "Notes & Blogs"
     url = "/garden/"
     weight = 1
   [[menu.main]]
