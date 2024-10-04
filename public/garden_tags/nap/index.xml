@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/garden_tags/nap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The best trees to fall asleep in 2020</title>
-      <link>http://localhost:1313/garden/growing_example/</link>
+      <link>http://localhost:1313/quickaccess/growing_example/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/garden/growing_example/</guid>
+      <guid>http://localhost:1313/quickaccess/growing_example/</guid>
       <description></description>
     </item>
   </channel>

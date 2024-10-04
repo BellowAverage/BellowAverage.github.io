@@ -35,19 +35,19 @@ copyright = "Chris Wang ©"
 
 [menu]
   [[menu.main]]
-    name = "Notes & Blogs"
+    name = "Quick Access"
     url = "/garden/"
     weight = 1
   [[menu.main]]
-    name = "Projects"
+    name = "Notes & Blogs"
     url = "/projects/"
     weight = 2
   [[menu.main]]
-    name = "Library"
+    name = "Demos and APIs"
     url = "/library/"
     weight = 3
   [[menu.main]]
-    name = "About"
+    name = "Site Documentation"
     url = "/about/"
     weight = 4
 

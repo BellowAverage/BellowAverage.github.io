@@ -7,7 +7,7 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Chris Wang ©</copyright>
-    <lastBuildDate>Mon, 30 Sep 2024 15:39:05 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Theme Documentation</title>
@@ -28,6 +28,13 @@
       <link>http://localhost:1313/projects/project3/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/project3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>View &amp; Download CV</title>
+      <link>http://localhost:1313/quickaccess/viewanddownloadcv/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickaccess/viewanddownloadcv/</guid>
       <description></description>
     </item>
     <item>
@@ -52,24 +59,17 @@
       <description></description>
     </item>
     <item>
-      <title>On the nutrition benefits of bamboo shoots</title>
-      <link>http://localhost:1313/garden/seeding_example/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/garden/seeding_example/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Optimizing your daily fur cleaning routine</title>
-      <link>http://localhost:1313/garden/evergreen_example/</link>
+      <link>http://localhost:1313/quickaccess/evergreen_example/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/garden/evergreen_example/</guid>
+      <guid>http://localhost:1313/quickaccess/evergreen_example/</guid>
       <description></description>
     </item>
     <item>
       <title>The best trees to fall asleep in 2020</title>
-      <link>http://localhost:1313/garden/growing_example/</link>
+      <link>http://localhost:1313/quickaccess/growing_example/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/garden/growing_example/</guid>
+      <guid>http://localhost:1313/quickaccess/growing_example/</guid>
       <description></description>
     </item>
     <item>
