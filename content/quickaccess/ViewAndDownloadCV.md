@@ -1,11 +1,12 @@
 ---
-title: "View & Download CV"
+title: "★ View & Download CV"
 date: 2024-10-01
 lastmod: 2024-10-01
 draft: false
 garden_tags: ["CV"]
 summary: " "
-status: "seeding"
+status: "done"
+weight: 3
 ---
 
 # Xinzhou (Chris) Wang

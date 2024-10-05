@@ -43,8 +43,8 @@ copyright = "Chris Wang ©"
     url = "/notes/"
     weight = 2
   [[menu.main]]
-    name = "Demos and APIs"
-    url = "/library/"
+    name = "Featured Articles"
+    url = "/featuredarticles/"
     weight = 3
   [[menu.main]]
     name = "Site Documentation"

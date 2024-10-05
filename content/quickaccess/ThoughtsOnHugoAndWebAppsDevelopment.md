@@ -1,11 +1,12 @@
 ---
-title: "Thoughts on Hugo and Web Apps Development"
+title: "★ Reflection on Hugo and Web Apps Development"
 date: 2024-10-04
 lastmod: 2024-10-04
 draft: false
 garden_tags: ["Thoughts", "Technology"]
 summary: " "
-status: "growing"
+status: "done"
+weight: 2
 ---
 # Description
 

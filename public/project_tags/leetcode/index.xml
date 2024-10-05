@@ -16,5 +16,26 @@
       <guid>http://localhost:1313/notes/algorithmbubblesort/</guid>
       <description>Explanation and implementation of Bubble Sorting in C++ and Python with complexity analysis.</description>
     </item>
+    <item>
+      <title>Algorithm Insertion Sort</title>
+      <link>http://localhost:1313/notes/algorithminsertionsort/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/algorithminsertionsort/</guid>
+      <description>Introduction and implementation of Insertion Sort in C++ and Python coding languages.</description>
+    </item>
+    <item>
+      <title>Algorithm Quick Sort</title>
+      <link>http://localhost:1313/notes/algorithmquicksort/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/algorithmquicksort/</guid>
+      <description>Overview of Quick Sort algorithm with complexity analysis in C++ and Python.</description>
+    </item>
+    <item>
+      <title>Algorithm Selection Sort</title>
+      <link>http://localhost:1313/notes/algorithmselectionsort/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/algorithmselectionsort/</guid>
+      <description>Introduction to Selection Sort algorithm in C++ and Python, demonstrating sorting logic.</description>
+    </item>
   </channel>
 </rss>

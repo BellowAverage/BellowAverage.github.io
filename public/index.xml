@@ -10,11 +10,25 @@
     <lastBuildDate>Fri, 04 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown Syntax</title>
-      <link>http://localhost:1313/quickaccess/project1/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/quickaccess/project1/</guid>
-      <description>Example of markdown syntax you can use to edit your content</description>
+      <title>★ Technical Documentation of the Site (the Assignment)</title>
+      <link>http://localhost:1313/quickaccess/abouttheassignmentandthissite/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickaccess/abouttheassignmentandthissite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>★ Reflection on Hugo and Web Apps Development</title>
+      <link>http://localhost:1313/quickaccess/thoughtsonhugoandwebappsdevelopment/</link>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickaccess/thoughtsonhugoandwebappsdevelopment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>★ View &amp; Download CV</title>
+      <link>http://localhost:1313/quickaccess/viewanddownloadcv/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickaccess/viewanddownloadcv/</guid>
+      <description></description>
     </item>
     <item>
       <title>Algorithm Bubble Sort</title>
@@ -162,27 +176,6 @@
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/reactdjangoconfiguration/</guid>
       <description>Configuring React &amp;amp; Django connection with essential steps and framework installation for both.</description>
-    </item>
-    <item>
-      <title>Thoughts on Hugo and Web Apps Development</title>
-      <link>http://localhost:1313/quickaccess/thoughtsonhugoandwebappsdevelopment/</link>
-      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/quickaccess/thoughtsonhugoandwebappsdevelopment/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>About the Assigment and This Site</title>
-      <link>http://localhost:1313/quickaccess/abouttheassignmentandthissite/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/quickaccess/abouttheassignmentandthissite/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>View &amp; Download CV</title>
-      <link>http://localhost:1313/quickaccess/viewanddownloadcv/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/quickaccess/viewanddownloadcv/</guid>
-      <description></description>
     </item>
     <item>
       <title>My First Post</title>
