@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>Chris Wang Personal Showcase | Nginx Access log Generator</title>
+    <meta name="description" content="Generate high traffic Nginx access logs through proxy and header manipulation with Python.">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="http://localhost:1313/">
+            
+            <b style="font-weight: 800;">CW</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/quickaccess/"> Quick Access</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/notes/"> Notes &amp; Blogs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Demos and APIs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> Site Documentation</a>
+                </li>
+             
+            <li class="nav-item" id="dark_mode_button">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">Nginx Access log Generator</h1>
+        </div>
+        
+        <p class="text-center fs-4 fst-italic serif">Generate high traffic Nginx access logs through proxy and header manipulation with Python.</p>
+        
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created Jul 1, 2021 - 
+                
+                Last updated: Jul 1, 2021
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                    
+                    <span class="badge tag-badge">docs</span>
+                    
+                    <span class="badge tag-badge">how-to</span>
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <h1 id="nginx-accesslog-generator"id="nginx-accesslog-generator"
+>Nginx Access.log Generator 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/nginxaccessloggenerator/#nginx-accesslog-generator&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h1><p>Created: September 12, 2024 1:48 PM
+Labels &amp; Language: Python, http, nginx</p>
+<h2 id="引言"id="引言"
+>引言 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/nginxaccessloggenerator/#引言&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p>Nginx是一种流行的开源Web服务器和反向代理服务器技术。它旨在处理高流量的网站并快速高效地提供Web内容。Nginx还可用作负载均衡器、HTTP缓存和电子邮件协议（IMAP、POP3和SMTP）的代理服务器等。本篇笔记记录的技术，旨在通过模拟多个IP登录访问nginx的<code>index.html</code>页面，达到生成数量级达到至多每日千万体量的访问日志的效果。这些日志文件数据将作为后续分析的基础。</p>
+<h2 id="nginx生成访问日志"id="nginx生成访问日志"
+>Nginx生成访问日志 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/nginxaccessloggenerator/#nginx生成访问日志&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><h3 id="程序设计概述"id="程序设计概述"
+>程序设计概述 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/nginxaccessloggenerator/#程序设计概述&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><p>考虑项目的性质和成本，将采用nginx架构的django项目部署在本地虚拟机中，模拟公网中建立的网站（实际在内网进行操作），该虚拟机服务器采用Ubuntu Linux操作系统。搭载Windows系统的本地主机作为发起访问请求的实体，通过<code>python requests</code>库编写的自动脚本，实现千万数量级的访问操作。在这个自动脚本中，除了本机访问外，为了模拟多个虚拟<code>IP</code>，使用基于<code>squid</code>的<code>proxy</code>代理技术，通过另外3台配置有<code>squid</code>代理的由虚拟机模拟的服务器（分别名为<code>hadoop102</code>, <code>hadoop103</code>, <code>hadoop104</code>）转发访问请求，达到<code>access.log</code>中多个不同<code>IP</code>访问的效果。使用<code>fake_useragent</code>库实现对访问请求信息的随机生成，将<code>header</code>伪装成多个不同来源，如不同的浏览器、操作系统等。</p>
+<h3 id="为代理服务器配置squid转发"id="为代理服务器配置squid转发"
+>为代理服务器配置squid转发 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/nginxaccessloggenerator/#为代理服务器配置squid转发&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><ul>
+<li>在代理服务器上以root用户身份执行安装<code>squid</code>：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yum install squid <span style="color:#75715e"># hadoop102-104服务器使用的是CentOS系统</span>
+</span></span></code></pre></div><ul>
+<li>修改 Squid 配置文件<code>/etc/squid/squid.conf</code>，进行相应更改并完成配置：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>http_port <span style="color:#ae81ff">3128</span> <span style="color:#75715e"># 默认监听地址和端口</span>
+</span></span><span style="display:flex;"><span>http_access allow all <span style="color:#75715e"># 允许所有客户端连接</span>
+</span></span><span style="display:flex;"><span>-------------------------------------------------------
+</span></span><span style="display:flex;"><span>systemctl restart squid <span style="color:#75715e"># 保存配置文件并重新启动squid服务</span>
+</span></span></code></pre></div><ul>
+<li>使用集群分发脚本<code>xsync</code>同步所有<code>hadoop</code>服务器的代理配置信息：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xsync /etc/squid/squid.conf <span style="color:#75715e"># 见[Hadoop3.x Basics](http://124.222.120.214/media/notion_files/070523/hadoop_basics_notes.html)</span>
+</span></span></code></pre></div><h3 id="部署基于nginx架构的网站"id="部署基于nginx架构的网站"
+>部署基于Nginx架构的网站 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/nginxaccessloggenerator/#部署基于nginx架构的网站&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><p>运行网站的服务器端采用基于Django的web架构，并通过nginx进行部署。有关该网站架构的技术细节，可以参照我另一篇笔记：<a href="http://124.222.120.214/media/notion_files/070923/Django%20Basics%20668d2388c67b47869a192459163ec675.html"><strong><code>Django Basics</code></strong></a></p>
+<p>关于该网站的nginx配置信息，可以参照这份配置时留存的操作备份：<a href="http://124.222.120.214/media/notion_files/070923/deploy_nginx_on_server.txt"><code>deploy_nginx_on_server</code></a></p>
+<ul>
+<li>使用<code>uwsgi</code>运行<code>Django</code>工程，并启动<code>nginx</code>服务使之在内网上线：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nohup uwsgi --ini uwsgi.ini <span style="color:#111">&amp;</span>
+</span></span><span style="display:flex;"><span>service nginx start
+</span></span></code></pre></div><ul>
+<li>在Windows主机访问<code>nginx</code>网站<code>homepage.html</code>页面，页面返回正常。</li>
+<li>检查<code>access.log</code>中是否正确生成了日志：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 相比原文件，增加了新访问时生成的3条日志，分别获取了主页的html,css,和js文件：</span>
+</span></span><span style="display:flex;"><span>192.168.10.1 - - <span style="color:#f92672">[</span>09/Jul/2023:20:51:23 +0800<span style="color:#f92672">]</span> <span style="color:#d88200">&#34;GET /homepage/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">5266</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.67&#34;</span>
+</span></span><span style="display:flex;"><span>192.168.10.1 - - <span style="color:#f92672">[</span>09/Jul/2023:20:51:23 +0800<span style="color:#f92672">]</span> <span style="color:#d88200">&#34;GET /static/js/scripts.js HTTP/1.1&#34;</span> <span style="color:#ae81ff">404</span> <span style="color:#ae81ff">1035</span> <span style="color:#d88200">&#34;http://192.168.10.128/homepage/&#34;</span> <span style="color:#d88200">&#34;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.67&#34;</span>
+</span></span><span style="display:flex;"><span>192.168.10.1 - - <span style="color:#f92672">[</span>09/Jul/2023:20:51:23 +0800<span style="color:#f92672">]</span> <span style="color:#d88200">&#34;GET /static/css/styles.css HTTP/1.1&#34;</span> <span style="color:#ae81ff">404</span> <span style="color:#ae81ff">1029</span> <span style="color:#d88200">&#34;http://192.168.10.128/homepage/&#34;</span> <span style="color:#d88200">&#34;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.67&#34;</span>
+</span></span></code></pre></div><h3 id="通过代理转发header伪装自动化脚本生成大量日志数据"id="通过代理转发header伪装自动化脚本生成大量日志数据"
+>通过代理转发、header伪装、自动化脚本生成大量日志数据 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/nginxaccessloggenerator/#通过代理转发header伪装自动化脚本生成大量日志数据&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><ul>
+<li>如程序设计概述中所述，使用<code>requests</code>库实现批量访问：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#111">requests</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> <span style="color:#111">fake_useragent</span> <span style="color:#f92672">import</span> <span style="color:#111">UserAgent</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">def</span> <span style="color:#75af00">send_proxy_requests</span><span style="color:#111">():</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">proxy_list</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#d88200">&#39;hadoop102:3128&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;hadoop103:3128&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;hadoop104:3128&#39;</span><span style="color:#111">]</span>  <span style="color:#75715e"># 代理服务器列表</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">nginx_url</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;http://192.168.10.128/homepage/&#39;</span>  <span style="color:#75715e"># Nginx的URL</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">proxy</span> <span style="color:#f92672">in</span> <span style="color:#111">proxy_list</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">proxies</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#d88200">&#39;http&#39;</span><span style="color:#111">:</span> <span style="color:#d88200">&#39;http://&#39;</span> <span style="color:#f92672">+</span> <span style="color:#111">proxy</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#d88200">&#39;https&#39;</span><span style="color:#111">:</span> <span style="color:#d88200">&#39;https://&#39;</span> <span style="color:#f92672">+</span> <span style="color:#111">proxy</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">user_agent</span> <span style="color:#f92672">=</span> <span style="color:#111">UserAgent</span><span style="color:#111">()</span><span style="color:#f92672">.</span><span style="color:#111">random</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">headers</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span><span style="color:#d88200">&#39;User-Agent&#39;</span><span style="color:#111">:</span> <span style="color:#111">user_agent</span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">try</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">response</span> <span style="color:#f92672">=</span> <span style="color:#111">requests</span><span style="color:#f92672">.</span><span style="color:#111">get</span><span style="color:#111">(</span><span style="color:#111">nginx_url</span><span style="color:#111">,</span> <span style="color:#111">proxies</span><span style="color:#f92672">=</span><span style="color:#111">proxies</span><span style="color:#111">,</span> <span style="color:#111">headers</span><span style="color:#f92672">=</span><span style="color:#111">headers</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#39;IP </span><span style="color:#d88200">{}</span><span style="color:#d88200"> 访问结果: </span><span style="color:#d88200">{}</span><span style="color:#d88200">&#39;</span><span style="color:#f92672">.</span><span style="color:#111">format</span><span style="color:#111">(</span><span style="color:#111">proxy</span><span style="color:#111">,</span> <span style="color:#111">response</span><span style="color:#f92672">.</span><span style="color:#111">status_code</span><span style="color:#111">))</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">except</span> <span style="color:#111">requests</span><span style="color:#f92672">.</span><span style="color:#111">exceptions</span><span style="color:#f92672">.</span><span style="color:#111">RequestException</span> <span style="color:#00a8c8">as</span> <span style="color:#111">e</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#39;IP </span><span style="color:#d88200">{}</span><span style="color:#d88200"> 访问异常: </span><span style="color:#d88200">{}</span><span style="color:#d88200">&#39;</span><span style="color:#f92672">.</span><span style="color:#111">format</span><span style="color:#111">(</span><span style="color:#111">proxy</span><span style="color:#111">,</span> <span style="color:#111">str</span><span style="color:#111">(</span><span style="color:#111">e</span><span style="color:#111">)))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">def</span> <span style="color:#75af00">send_local_request</span><span style="color:#111">():</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">nginx_url</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;http://192.168.10.128/homepage/&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">try</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">response</span> <span style="color:#f92672">=</span> <span style="color:#111">requests</span><span style="color:#f92672">.</span><span style="color:#111">get</span><span style="color:#111">(</span><span style="color:#111">nginx_url</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#39;IP </span><span style="color:#d88200">{}</span><span style="color:#d88200"> 访问结果: </span><span style="color:#d88200">{}</span><span style="color:#d88200">&#39;</span><span style="color:#f92672">.</span><span style="color:#111">format</span><span style="color:#111">(</span><span style="color:#d88200">&#34;localhost:80&#34;</span><span style="color:#111">,</span> <span style="color:#111">response</span><span style="color:#f92672">.</span><span style="color:#111">status_code</span><span style="color:#111">))</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">except</span> <span style="color:#111">requests</span><span style="color:#f92672">.</span><span style="color:#111">exceptions</span><span style="color:#f92672">.</span><span style="color:#111">RequestException</span> <span style="color:#00a8c8">as</span> <span style="color:#111">e</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#39;IP </span><span style="color:#d88200">{}</span><span style="color:#d88200"> 访问异常: </span><span style="color:#d88200">{}</span><span style="color:#d88200">&#39;</span><span style="color:#f92672">.</span><span style="color:#111">format</span><span style="color:#111">(</span><span style="color:#d88200">&#34;localhost:80&#34;</span><span style="color:#111">,</span> <span style="color:#111">str</span><span style="color:#111">(</span><span style="color:#111">e</span><span style="color:#111">)))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 测试：生成400条数据：</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">for</span> <span style="color:#111">request_index</span> <span style="color:#f92672">in</span> <span style="color:#111">range</span><span style="color:#111">(</span><span style="color:#ae81ff">100</span><span style="color:#111">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">send_proxy_requests</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">send_local_request</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">59</span><span style="color:#f92672">-</span><span style="color:#ae81ff">458</span>
+</span></span></code></pre></div><ul>
+<li>查看access.log，成功生成相应的日志文件。该日志文件的下载链接：<a href="http://124.222.120.214/download/access_log.txt"><code>access.log</code></a></li>
+<li>其中第59行~458行为运行上述代码生成的日志，前58行为此前其他测试生成。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 部分日志一览（240~249）</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">192.168.10.103</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">[</span><span style="color:#ae81ff">09</span><span style="color:#f92672">/</span><span style="color:#111">Jul</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2023</span><span style="color:#111">:</span><span style="color:#ae81ff">21</span><span style="color:#111">:</span><span style="color:#ae81ff">20</span><span style="color:#111">:</span><span style="color:#ae81ff">48</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0800</span><span style="color:#111">]</span> <span style="color:#d88200">&#34;GET /homepage/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">21552</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/4.0 (compatible; MSIE 6.0; Linux i686 ; en) Opera 9.70&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">192.168.10.104</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">[</span><span style="color:#ae81ff">09</span><span style="color:#f92672">/</span><span style="color:#111">Jul</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2023</span><span style="color:#111">:</span><span style="color:#ae81ff">21</span><span style="color:#111">:</span><span style="color:#ae81ff">20</span><span style="color:#111">:</span><span style="color:#ae81ff">48</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0800</span><span style="color:#111">]</span> <span style="color:#d88200">&#34;GET /homepage/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">21552</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) Opera 7.10  [en]&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">192.168.10.1</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">[</span><span style="color:#ae81ff">09</span><span style="color:#f92672">/</span><span style="color:#111">Jul</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2023</span><span style="color:#111">:</span><span style="color:#ae81ff">21</span><span style="color:#111">:</span><span style="color:#ae81ff">20</span><span style="color:#111">:</span><span style="color:#ae81ff">48</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0800</span><span style="color:#111">]</span> <span style="color:#d88200">&#34;GET /homepage/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">5266</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;python-requests/2.31.0&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">192.168.10.102</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">[</span><span style="color:#ae81ff">09</span><span style="color:#f92672">/</span><span style="color:#111">Jul</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2023</span><span style="color:#111">:</span><span style="color:#ae81ff">21</span><span style="color:#111">:</span><span style="color:#ae81ff">20</span><span style="color:#111">:</span><span style="color:#ae81ff">48</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0800</span><span style="color:#111">]</span> <span style="color:#d88200">&#34;GET /homepage/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">21552</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_2; pt-br) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">192.168.10.103</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">[</span><span style="color:#ae81ff">09</span><span style="color:#f92672">/</span><span style="color:#111">Jul</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2023</span><span style="color:#111">:</span><span style="color:#ae81ff">21</span><span style="color:#111">:</span><span style="color:#ae81ff">20</span><span style="color:#111">:</span><span style="color:#ae81ff">48</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0800</span><span style="color:#111">]</span> <span style="color:#d88200">&#34;GET /homepage/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">21552</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/5.0 (Macintosh; U; PPC Mac OS X; nl-nl) AppleWebKit/418.8 (KHTML, like Gecko) Safari/419.3&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">192.168.10.104</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">[</span><span style="color:#ae81ff">09</span><span style="color:#f92672">/</span><span style="color:#111">Jul</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2023</span><span style="color:#111">:</span><span style="color:#ae81ff">21</span><span style="color:#111">:</span><span style="color:#ae81ff">20</span><span style="color:#111">:</span><span style="color:#ae81ff">48</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0800</span><span style="color:#111">]</span> <span style="color:#d88200">&#34;GET /homepage/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">21552</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.59 Safari/525.19&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">192.168.10.1</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">[</span><span style="color:#ae81ff">09</span><span style="color:#f92672">/</span><span style="color:#111">Jul</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2023</span><span style="color:#111">:</span><span style="color:#ae81ff">21</span><span style="color:#111">:</span><span style="color:#ae81ff">20</span><span style="color:#111">:</span><span style="color:#ae81ff">48</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0800</span><span style="color:#111">]</span> <span style="color:#d88200">&#34;GET /homepage/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">5266</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;python-requests/2.31.0&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">192.168.10.102</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">[</span><span style="color:#ae81ff">09</span><span style="color:#f92672">/</span><span style="color:#111">Jul</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2023</span><span style="color:#111">:</span><span style="color:#ae81ff">21</span><span style="color:#111">:</span><span style="color:#ae81ff">20</span><span style="color:#111">:</span><span style="color:#ae81ff">48</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0800</span><span style="color:#111">]</span> <span style="color:#d88200">&#34;GET /homepage/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">21552</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/5.0 (X11; U; Linux x86_64; de; rv:1.8.1.12) Gecko/20080208 Fedora/2.0.0.12-1.fc8 Firefox/2.0.0.12&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">192.168.10.103</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">[</span><span style="color:#ae81ff">09</span><span style="color:#f92672">/</span><span style="color:#111">Jul</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2023</span><span style="color:#111">:</span><span style="color:#ae81ff">21</span><span style="color:#111">:</span><span style="color:#ae81ff">20</span><span style="color:#111">:</span><span style="color:#ae81ff">48</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0800</span><span style="color:#111">]</span> <span style="color:#d88200">&#34;GET /homepage/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">21552</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14931&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">192.168.10.104</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">[</span><span style="color:#ae81ff">09</span><span style="color:#f92672">/</span><span style="color:#111">Jul</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2023</span><span style="color:#111">:</span><span style="color:#ae81ff">21</span><span style="color:#111">:</span><span style="color:#ae81ff">20</span><span style="color:#111">:</span><span style="color:#ae81ff">48</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0800</span><span style="color:#111">]</span> <span style="color:#d88200">&#34;GET /homepage/ HTTP/1.1&#34;</span> <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">21552</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; en) Opera 11.00&#34;</span>
+</span></span></code></pre></div><h2 id="reference"id="reference"
+>Reference 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/nginxaccessloggenerator/#reference&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><ul>
+<li>在操作过程中采用了的ChatGPT提供的建议的对话链接：</li>
+</ul>
+<p><a href="https://chat.openai.com/share/16f97992-a96a-4c43-9970-7c963f9e1be0">ChatGPT</a></p>
+
+        </div>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Chris Wang © 2024 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script>
+
+
+var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+setTheme(savedTheme);
+
+</script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
+</html>

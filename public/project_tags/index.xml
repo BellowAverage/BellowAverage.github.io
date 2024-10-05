@@ -17,6 +17,13 @@
       <description></description>
     </item>
     <item>
+      <title>C&#43;&#43;</title>
+      <link>http://localhost:1313/project_tags/c&#43;&#43;/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project_tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Docs</title>
       <link>http://localhost:1313/project_tags/docs/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
@@ -31,10 +38,17 @@
       <description></description>
     </item>
     <item>
-      <title>Webapp</title>
-      <link>http://localhost:1313/project_tags/webapp/</link>
+      <title>LeetCode</title>
+      <link>http://localhost:1313/project_tags/leetcode/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project_tags/webapp/</guid>
+      <guid>http://localhost:1313/project_tags/leetcode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/project_tags/python/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project_tags/python/</guid>
       <description></description>
     </item>
   </channel>

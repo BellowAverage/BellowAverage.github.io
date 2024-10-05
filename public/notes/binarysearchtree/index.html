@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>Chris Wang Personal Showcase | Binary Search Tree</title>
+    <meta name="description" content="Learn about Binary Search Trees in Python through visuals and practice traversal methods and search algorithms.">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="http://localhost:1313/">
+            
+            <b style="font-weight: 800;">CW</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/quickaccess/"> Quick Access</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/notes/"> Notes &amp; Blogs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Demos and APIs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> Site Documentation</a>
+                </li>
+             
+            <li class="nav-item" id="dark_mode_button">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">Binary Search Tree</h1>
+        </div>
+        
+        <p class="text-center fs-4 fst-italic serif">Learn about Binary Search Trees in Python through visuals and practice traversal methods and search algorithms.</p>
+        
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created Jul 1, 2021 - 
+                
+                Last updated: Jul 1, 2021
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Done 🌳</span>
+    
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                    
+                    <span class="badge tag-badge">Python</span>
+                    
+                    <span class="badge tag-badge">C&#43;&#43;</span>
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <h1 id="binary-search-tree"id="binary-search-tree"
+>Binary Search Tree 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/binarysearchtree/#binary-search-tree&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h1><p>Created: September 12, 2024 1:48 PM
+Labels &amp; Language: Data Structures, Python
+Source: <a href="https://www.youtube.com/watch?v=DlWxqU3LLpY">https://www.youtube.com/watch?v=DlWxqU3LLpY</a></p>
+<h2 id="description"id="description"
+>Description 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/binarysearchtree/#description&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p>Taught in school years ago about data structure, using C++. Later I found myself using Python more often. So I searched again on Python’s version of data structure and tried to relearn.</p>
+<p>This displays graphically how Binary Search Tree works.</p>
+<p><a href="https://www.cs.usfca.edu/~galles/visualization/BST.html">Binary Search Tree</a></p>
+<h2 id="binary-search-tree-1"id="binary-search-tree-1"
+>Binary Search Tree 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/binarysearchtree/#binary-search-tree-1&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><h3 id="1-create-the-tree-node-class"id="1-create-the-tree-node-class"
+>1. Create the tree node class. 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/binarysearchtree/#1-create-the-tree-node-class&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00a8c8">class</span> <span style="color:#75af00">TreeNode</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">def</span> <span style="color:#111">__init__</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">,</span> <span style="color:#111">value</span><span style="color:#111">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">left</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">None</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">right</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">None</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">value</span> <span style="color:#f92672">=</span> <span style="color:#111">value</span>
+</span></span></code></pre></div><h3 id="2-insert-elements-into-the-binary-tree"id="2-insert-elements-into-the-binary-tree"
+>2. Insert elements into the Binary Tree. 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/binarysearchtree/#2-insert-elements-into-the-binary-tree&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><p>Assume that the key determination rule of a binary tree is, if the inserting value is larger than its father, put it on the left side; else put it on the right side. To do the insertion —&gt;</p>
+<ol>
+<li>There is no node on the active node —&gt; Create the tree node class on that node using the inserting value.</li>
+<li>This is a node on it —&gt; Create a tree node class on that node’s position. Then do it again, using the inserting value —&gt; <strong>recursion.</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00a8c8">def</span> <span style="color:#75af00">insert</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">,</span> <span style="color:#111">value</span><span style="color:#111">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">value</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">value</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">if</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">left</span> <span style="color:#f92672">is</span> <span style="color:#00a8c8">None</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">left</span> <span style="color:#f92672">=</span> <span style="color:#111">TreeNode</span><span style="color:#111">(</span><span style="color:#111">value</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">else</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">left</span><span style="color:#f92672">.</span><span style="color:#111">insert</span><span style="color:#111">(</span><span style="color:#111">value</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">else</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">if</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">right</span> <span style="color:#f92672">is</span> <span style="color:#00a8c8">None</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">right</span> <span style="color:#f92672">=</span> <span style="color:#111">TreeNode</span><span style="color:#111">(</span><span style="color:#111">value</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">else</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">right</span><span style="color:#f92672">.</span><span style="color:#111">insert</span><span style="color:#111">(</span><span style="color:#111">value</span><span style="color:#111">)</span>
+</span></span></code></pre></div><h3 id="3-traversal--in-order-pre-order-and-post-order"id="3-traversal--in-order-pre-order-and-post-order"
+>3. Traversal —&gt; in-order, pre-order, and post-order 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/binarysearchtree/#3-traversal--in-order-pre-order-and-post-order&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><p>There are 3 types of traversals in an ordinary Binary Search Tree. Notice that the Chinese ways of naming these methods are somehow … strange. It’s easy to confuse at the beginning.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">In-order Traversal</th>
+          <th style="text-align: left">中序遍历</th>
+          <th style="text-align: left">Return value in the middle of the each side’s recursion.</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Pre-order Traversal</td>
+          <td style="text-align: left">先序遍历</td>
+          <td style="text-align: left">Return value upfront before the recursions.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Post-order Traversal</td>
+          <td style="text-align: left">后序遍历</td>
+          <td style="text-align: left">Return value after both sides’ recursions.</td>
+      </tr>
+  </tbody>
+</table>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00a8c8">def</span> <span style="color:#75af00">inorder_traversal</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># as left as possible</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">left</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># remember this line does not terminate this function!!</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">left</span><span style="color:#f92672">.</span><span style="color:#111">inorder_traversal</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">value</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">right</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">right</span><span style="color:#f92672">.</span><span style="color:#111">inorder_traversal</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">def</span> <span style="color:#75af00">preorder_traversal</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">value</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">left</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">left</span><span style="color:#f92672">.</span><span style="color:#111">preorder_traversal</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">right</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">right</span><span style="color:#f92672">.</span><span style="color:#111">preorder_traversal</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">def</span> <span style="color:#75af00">postorder_traversal</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">left</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">left</span><span style="color:#f92672">.</span><span style="color:#111">postorder_traversal</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">right</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">right</span><span style="color:#f92672">.</span><span style="color:#111">postorder_traversal</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">value</span><span style="color:#111">)</span>
+</span></span></code></pre></div><h3 id="4-find--same-recursion-algorithm"id="4-find--same-recursion-algorithm"
+>4. Find —&gt; same recursion algorithm 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/binarysearchtree/#4-find--same-recursion-algorithm&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><p>Using Binary Tree as a data structure is of certain assistance when it comes to searching an element. In fact, the worst case searching in an ordinary Binary Tree in terms of time complexity is <strong>linear.</strong> This is because in an ordinary traversal, Binary Tree normally gets rid of half of the invalid directions (averagely one side).</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00a8c8">def</span> <span style="color:#75af00">find</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">,</span> <span style="color:#111">value</span><span style="color:#111">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">value</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">value</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">if</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">left</span> <span style="color:#f92672">is</span> <span style="color:#00a8c8">None</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">return</span> <span style="color:#00a8c8">False</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">else</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">left</span><span style="color:#f92672">.</span><span style="color:#111">find</span><span style="color:#111">(</span><span style="color:#111">value</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">elif</span> <span style="color:#111">value</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">value</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">if</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">right</span> <span style="color:#f92672">is</span> <span style="color:#00a8c8">None</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">return</span> <span style="color:#00a8c8">False</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">else</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">right</span><span style="color:#f92672">.</span><span style="color:#111">find</span><span style="color:#111">(</span><span style="color:#111">value</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">else</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#00a8c8">True</span>
+</span></span></code></pre></div><h2 id="other-sources"id="other-sources"
+>Other Sources 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/binarysearchtree/#other-sources&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><ul>
+<li>Very helpful tutorial by NeuralNine on YouTube.</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=DlWxqU3LLpY">https://www.youtube.com/watch?v=DlWxqU3LLpY</a></p>
+<ul>
+<li><a href="LeetCode%202400%20Number%20of%20Ways%20to%20Reach%20a%20Position%20A%200d8ca20c406e433a87f33d3984aa5cb1.md">LeetCode 2400</a> is related to this data structure. Although it can be handled through other algorithm, which could be much easier somehow, I still put it here 🥲.</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Chris Wang © 2024 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script>
+
+
+var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+setTheme(savedTheme);
+
+</script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
+</html>

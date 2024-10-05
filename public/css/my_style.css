@@ -1,1 +1,57 @@
 /* Custom styles go here */
+:root {
+    --blue: #0A94C8;
+    --lighter-blue: #addbec;
+    --yellow: #FFB603;
+    --red: #FF2F03;
+    --dark: #233044;
+    --grey: #454963;
+    --white: #fff;
+    --offwhite: #fafafa;
+    --title: 'Times New Roman', sans-serif;
+    --summary: 'Times New Roman', sans-serif;
+    --headings: 'Times New Roman', sans-serif;
+    --h5: 0.83rem;
+    --h6: 0.67rem;
+}
+
+.subheading {
+    font-family: 'Times New Roman', sans-serif;
+}
+
+a.heading.fs-2 {
+    font-weight: bold;
+}
+
+h1 {
+    /* font-family: 'Times New Roman', sans-serif; */
+    color: black;
+
+}
+
+h2, h3, h4 {
+    /* font-family: 'Times New Roman', sans-serif; */
+    font-weight: normal;
+    
+}
+
+p, li {
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: normal;
+}
+
+code {
+    color: red;
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'cascade code', monospace;
+}
+
+.nav-item {
+    margin-top: 0.5rem;
+}
+
+#dark_mode_button{
+    margin-top: 0.6rem;
+}

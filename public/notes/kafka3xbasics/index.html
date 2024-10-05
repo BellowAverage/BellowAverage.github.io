@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>Chris Wang Personal Showcase | Kafka3 x Basics</title>
+    <meta name="description" content="Guide to installing and configuring Kafka on CentOS with basic Zookeeper operations.">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="http://localhost:1313/">
+            
+            <b style="font-weight: 800;">CW</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/quickaccess/"> Quick Access</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/notes/"> Notes &amp; Blogs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Demos and APIs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> Site Documentation</a>
+                </li>
+             
+            <li class="nav-item" id="dark_mode_button">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">Kafka3 x Basics</h1>
+        </div>
+        
+        <p class="text-center fs-4 fst-italic serif">Guide to installing and configuring Kafka on CentOS with basic Zookeeper operations.</p>
+        
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created Jul 1, 2021 - 
+                
+                Last updated: Jul 1, 2021
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                    
+                    <span class="badge tag-badge">docs</span>
+                    
+                    <span class="badge tag-badge">how-to</span>
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <h1 id="kafka3x-basics"id="kafka3x-basics"
+>Kafka3.x Basics 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/kafka3xbasics/#kafka3x-basics&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h1><p>Created: September 12, 2024 1:48 PM
+Labels &amp; Language: CentOS, Kafka
+Source: <a href="https://www.bilibili.com/video/BV1vr4y1677k/">https://www.bilibili.com/video/BV1vr4y1677k/</a></p>
+<h2 id="引言"id="引言"
+>引言 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/kafka3xbasics/#引言&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p>Kafka是一个开源的分布式流处理平台，最初由LinkedIn开发并于2011年开源。它被设计用于处理高容量的实时数据流，包括日志、事件流和其他实时数据。Kafka通常被用作一种可靠的消息系统，采用发布-订阅模式，其中数据被组织成所谓的&quot;topic&quot;，并且可以被多个消费者订阅。生产者可以将消息发布到特定的topic中，而消费者则可以从这些topic中读取消息并进行处理。</p>
+<h2 id="kafka3x-基础篇"id="kafka3x-基础篇"
+>Kafka3.x 基础篇 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/kafka3xbasics/#kafka3x-基础篇&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><h3 id="安装和配置kafka于centos"id="安装和配置kafka于centos"
+>安装和配置kafka于CentOS 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/kafka3xbasics/#安装和配置kafka于centos&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><ol>
+<li>修改<code>config</code>文件<code>server.properties</code></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># A comma separated list of directories under which to store log files</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># log.dirs=/tmp/kafka-logs 修改为：</span>
+</span></span><span style="display:flex;"><span>log.dirs<span style="color:#f92672">=</span>/home/chriswang/Applications/kafka/data
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># zookeeper.connect = localhost:2181 修改为：</span>
+</span></span><span style="display:flex;"><span>zookeeper.connect<span style="color:#f92672">=</span>hadoop102:2181,hadoop103:2181,hadoop104:2181/kafka
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># hadoop服务器102-104配置信息见[Hadoop3.x Basics](http://124.222.120.214/media/notion_files/070523/hadoop_basics_notes.html)</span>
+</span></span></code></pre></div><ol>
+<li>修改hadoop服务器的<code>broker.id</code>，即分别在<code>hadoop103</code>和<code>hadoop104</code>上修改配置文件中的<code>/home/chriswang/Applications/kafka/config/server.properties</code>中的 <code>broker.id=1</code>， <code>broker.id=2</code></li>
+<li>基础zookeeper操作</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#111">bin</span><span style="color:#f92672">/</span><span style="color:#111">zkServer</span><span style="color:#111">.</span><span style="color:#75af00">sh</span> <span style="color:#111">start</span> <span style="color:#111">开启服务端</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">bin</span><span style="color:#f92672">/</span><span style="color:#111">zkCli</span><span style="color:#111">.</span><span style="color:#75af00">sh</span> <span style="color:#111">开启客户端</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">quit</span> <span style="color:#111">退出界面</span>
+</span></span></code></pre></div><h2 id="other-references"id="other-references"
+>Other References 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/kafka3xbasics/#other-references&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p><a href="https://www.bilibili.com/video/BV1vr4y1677k/">【尚硅谷】Kafka3.x教程（从入门到调优，深入全面）_哔哩哔哩_bilibili</a></p>
+
+        </div>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Chris Wang © 2024 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script>
+
+
+var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+setTheme(savedTheme);
+
+</script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
+</html>

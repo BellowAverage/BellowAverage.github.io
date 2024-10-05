@@ -29,14 +29,14 @@
       		</div>
 			{{ with .Site.GetPage "section" "quickaccess" }}
 			<div class="d-flex flex-row-reverse">
-        		<a href="{{ .RelPermalink }}" role="button" class="btn btn-sm see-all">See all articles</a>
+        		<a href="{{ .RelPermalink }}" role="button" class="btn btn-sm see-all">See all Featured Resources</a>
       		</div>
       		{{ end }}
 		</div>
     	
 		<!-- Projects -->
 		<div class="col-lg-7">
-			{{ with .Site.GetPage "section" "projects" }}
+			{{ with .Site.GetPage "section" "notes" }}
 			<div class="pb-4">
 				<a class="heading fs-2" href="{{ .RelPermalink }}">{{ .Title }}</a>
 			</div>          
@@ -45,13 +45,13 @@
 			{{ end }}
 			{{ end }}
 			<div class="row row-cols-1 row-cols-md-2 g-4 mb-5" data-masonry='{"percentPosition": true }'>
-				{{ range ( where site.RegularPages "Section" "projects" | first 6 ) }}
+				{{ range ( where site.RegularPages "Section" "notes" | first 6 ) }}
 				{{ partial "home_project.html" . }}
 				{{end}}
     		</div>
-			{{ with .Site.GetPage "section" "projects" }}
+			{{ with .Site.GetPage "section" "notes" }}
 			<div class="d-flex flex-row-reverse">
-				<a href="{{ .RelPermalink }}" role="button" class="btn btn-sm see-all">See all projects</a>
+				<a href="{{ .RelPermalink }}" role="button" class="btn btn-sm see-all">See all Notes & Blogs</a>
 			</div>    
 			{{ end }}
   		</div>

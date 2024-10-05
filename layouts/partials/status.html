@@ -1,10 +1,10 @@
 {{ with .Params.status }}
-    {{ if eq "seeding" . }}
-    <span class="status">Seeding 🌱</span>
-    {{ else if eq "growing" . }}
-    <span class="status">Growing 🌿</span>
-    {{ else if eq "evergreen" . }}
-    <span class="status">Evergreen 🌳</span>
+    {{ if eq "idea" . }}
+    <span class="status">Idea 🌱</span>
+    {{ else if eq "inprogress" . }}
+    <span class="status">In Progress 🌿</span>
+    {{ else if eq "done" . }}
+    <span class="status">Done 🌳</span>
     {{ else }}
     {{ end }}
 {{ end }}

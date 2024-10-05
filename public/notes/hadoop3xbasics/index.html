@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>Chris Wang Personal Showcase | Hadoop3 x Basics</title>
+    <meta name="description" content="Learn Hadoop3.x basics on CentOS for big data processing, including setup and configurations.">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="http://localhost:1313/">
+            
+            <b style="font-weight: 800;">CW</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/quickaccess/"> Quick Access</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/notes/"> Notes &amp; Blogs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Demos and APIs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> Site Documentation</a>
+                </li>
+             
+            <li class="nav-item" id="dark_mode_button">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">Hadoop3 x Basics</h1>
+        </div>
+        
+        <p class="text-center fs-4 fst-italic serif">Learn Hadoop3.x basics on CentOS for big data processing, including setup and configurations.</p>
+        
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created Jul 1, 2021 - 
+                
+                Last updated: Jul 1, 2021
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                    
+                    <span class="badge tag-badge">docs</span>
+                    
+                    <span class="badge tag-badge">how-to</span>
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <h1 id="hadoop3x-basics"id="hadoop3x-basics"
+>Hadoop3.x Basics 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/hadoop3xbasics/#hadoop3x-basics&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h1><p>Created: September 12, 2024 1:48 PM
+Labels &amp; Language: CentOS, Hadoop, Java
+Source: <a href="https://www.bilibili.com/video/BV1Qp4y1n7EN/">https://www.bilibili.com/video/BV1Qp4y1n7EN/</a></p>
+<h2 id="引言"id="引言"
+>引言 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/hadoop3xbasics/#引言&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p>Hadoop是大数据技术中重要的框架之一。在Hadoop的基础上，能够更容易地开发和运行其他处理大规模数据的框架。作为学习笔记，本文包括Hadoop的理论和在CentOS上的应用实践，包括配置和基本命令等。</p>
+<h2 id="hadoop3x-学习笔记---基础篇"id="hadoop3x-学习笔记---基础篇"
+>Hadoop3.x 学习笔记 - 基础篇 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/hadoop3xbasics/#hadoop3x-学习笔记---基础篇&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><h3 id="使用vmware虚拟机进行centos的配置和安装"id="使用vmware虚拟机进行centos的配置和安装"
+>使用VMware虚拟机进行CentOS的配置和安装 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/hadoop3xbasics/#使用vmware虚拟机进行centos的配置和安装&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><ol>
+<li>在本机中安装CentOS 7镜像的虚拟机，命名为hadoop100</li>
+<li>在虚拟网络编辑器中，设置NAT网络，VMnet8，子网IP设置为10端口</li>
+<li>在网络适配器控制面板中设置该适配器默认网关为192.168.10.2</li>
+<li>将Hadoop100设置为静态IP地址，以确保本机能够找到该服务器，并添加其他相关配置。修改主机名称，配置主机名称映射等。</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>root@hadoop100 chriswang<span style="color:#f92672">]</span><span style="color:#75715e"># vim /etc/sysconfig/network-scripts/ifcfg-ens33</span>
+</span></span><span style="display:flex;"><span>--------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># BOOTPROTO=&#34;dhcp&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 修改为：</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">BOOTPROTO</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;static&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 添加IP地址、网关、域名解析器</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">IPADDR</span><span style="color:#f92672">=</span>192.168.10.100
+</span></span><span style="display:flex;"><span><span style="color:#111">GATEWAY</span><span style="color:#f92672">=</span>192.168.10.2
+</span></span><span style="display:flex;"><span><span style="color:#111">DNS1</span><span style="color:#f92672">=</span>192.168.10.2
+</span></span><span style="display:flex;"><span>--------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 修改主机名称为hadoop100</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@hadoop100 chriswang<span style="color:#f92672">]</span><span style="color:#75715e"># vim /etc/hostname</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 修改主机名称映射</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@hadoop100 chriswang<span style="color:#f92672">]</span><span style="color:#75715e"># vim /etc/hosts</span>
+</span></span><span style="display:flex;"><span>--------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 添加映射给至多8台服务器</span>
+</span></span><span style="display:flex;"><span>......
+</span></span><span style="display:flex;"><span>192.168.10.100 hadoop100
+</span></span><span style="display:flex;"><span>192.168.10.101 hadoop101
+</span></span><span style="display:flex;"><span>......
+</span></span><span style="display:flex;"><span>192.168.10.108 hadoop108
+</span></span><span style="display:flex;"><span>--------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 重启以更新配置</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@hadoop100 chriswang<span style="color:#f92672">]</span><span style="color:#75715e"># reboot</span>
+</span></span></code></pre></div><ol>
+<li>使用本机PowerShell通过ssh协议模拟远程连接，成功。</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#111">PS </span><span style="color:#111">C:</span><span style="color:#111">\</span><span style="color:#111">Users</span><span style="color:#111">\</span><span style="color:#ae81ff">10131</span><span style="color:#111">&gt;</span> <span style="color:#111">ssh</span> <span style="color:#111">chriswang</span><span style="color:#111">@192</span><span style="color:#111">.</span><span style="color:#111">168</span><span style="color:#111">.</span><span style="color:#111">10</span><span style="color:#111">.</span><span style="color:#111">100</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">chriswang</span><span style="color:#111">@192</span><span style="color:#111">.</span><span style="color:#111">168</span><span style="color:#111">.</span><span style="color:#111">10</span><span style="color:#111">.</span><span style="color:#ae81ff">100</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#111">s</span> <span style="color:#111">password</span><span style="color:#960050;background-color:#1e0010">:</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">Last</span> <span style="color:#111">login</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#111">Tue</span> <span style="color:#111">Jul</span>  <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">19</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">05</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">39</span> <span style="color:#ae81ff">2023</span>
+</span></span></code></pre></div><ol>
+<li>配置Windows地址映像，地址为<code>C:\Windows\System32\drivers\etc\hosts</code></li>
+<li>CentOS环境配置 - 基本工具&amp;环境</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>chriswang@hadoop100 ~<span style="color:#f92672">]</span>$ sudo yum install -y epel-release
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>chriswang@hadoop100 ~<span style="color:#f92672">]</span>$ sudo systemctl stop firewalld
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>chriswang@hadoop100 ~<span style="color:#f92672">]</span>$ sudo systemctl disable firewalld.service
+</span></span><span style="display:flex;"><span>Removed symlink /etc/systemd/system/multi-user.target.wants/firewalld.service.
+</span></span><span style="display:flex;"><span>Removed symlink /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 清理预装java工具</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@hadoop100 chriswang<span style="color:#f92672">]</span><span style="color:#75715e"># rpm -qa | grep -i java | xargs -n1 rpm -e --nodeps</span>
+</span></span></code></pre></div><h3 id="克隆多台虚拟机以模拟分布式集群"id="克隆多台虚拟机以模拟分布式集群"
+>克隆多台虚拟机以模拟分布式集群 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/hadoop3xbasics/#克隆多台虚拟机以模拟分布式集群&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><ul>
+<li>使用VMware内置克隆工具，选择完全克隆即可</li>
+<li>对克隆后的服务器进行配置修改，即<code>(100 —&gt; 102, 103, 104)</code></li>
+</ul>
+<h3 id="安装并配置java-jdk和hadoop"id="安装并配置java-jdk和hadoop"
+>安装并配置Java JDK和Hadoop 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/hadoop3xbasics/#安装并配置java-jdk和hadoop&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><ul>
+<li>安装Java JDK后，配置全局声明：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#111">JAVA_HOME</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">export</span> <span style="color:#111">JAVA_HOME</span><span style="color:#f92672">=/</span><span style="color:#111">home</span><span style="color:#f92672">/</span><span style="color:#111">chriswang</span><span style="color:#f92672">/</span><span style="color:#111">Applications</span><span style="color:#f92672">/</span><span style="color:#111">jdk1</span><span style="color:#111">.</span><span style="color:#75af00">8</span><span style="color:#111">.</span><span style="color:#75af00">0_212</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">export</span> <span style="color:#111">PATH</span><span style="color:#f92672">=</span><span style="color:#111">$PATH</span><span style="color:#111">:</span><span style="color:#111">$JAVA_HOME</span><span style="color:#f92672">/</span><span style="color:#111">bin</span>
+</span></span></code></pre></div><ul>
+<li>安装Hadoop后，添加声明：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#111">HADOOP_HOME</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">export</span> <span style="color:#111">HADOOP_HOME</span><span style="color:#f92672">=/</span><span style="color:#111">home</span><span style="color:#f92672">/</span><span style="color:#111">chriswang</span><span style="color:#f92672">/</span><span style="color:#111">Applications</span><span style="color:#f92672">/</span><span style="color:#111">hadoop</span><span style="color:#f92672">-</span><span style="color:#111">3</span><span style="color:#111">.</span><span style="color:#75af00">1</span><span style="color:#111">.</span><span style="color:#75af00">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">export</span> <span style="color:#111">PATH</span><span style="color:#f92672">=</span><span style="color:#111">$PATH</span><span style="color:#111">:</span><span style="color:#111">$HADOOP_HOME</span><span style="color:#f92672">/</span><span style="color:#111">bin</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">export</span> <span style="color:#111">PATH</span><span style="color:#f92672">=</span><span style="color:#111">$PATH</span><span style="color:#111">:</span><span style="color:#111">$HADOOP_HOME</span><span style="color:#f92672">/</span><span style="color:#111">sbin</span>
+</span></span></code></pre></div><ul>
+<li>随后使用<code>source /etc/profile</code>即可开启该位置注册过的所有服务</li>
+</ul>
+<h3 id="完全分布式的运行模式"id="完全分布式的运行模式"
+>完全分布式的运行模式 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/hadoop3xbasics/#完全分布式的运行模式&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><ol>
+<li>编写集群分发脚本<code>xsync</code></li>
+</ol>
+<ul>
+<li>使用<code>scp</code>命令拷贝工具和环境至其他服务器</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 在hadoop102上执行：</span>
+</span></span><span style="display:flex;"><span>scp -r /home/chriswang/Applications/jdk1.8.0_212/ root@hadoop104:/home/chriswang/Applications
+</span></span><span style="display:flex;"><span>scp -r /home/chriswang/Applications/jdk1.8.0_212/ root@hadoop103:/home/chriswang/Applications
+</span></span></code></pre></div><ul>
+<li>或使用以<code>rsync</code>为基础的<code>xsync</code>集群分发脚本</li>
+</ul>
+<p>a. 在<code>/home/chriswang/bin</code>下创建<code>bash</code>命令文件<code>xsync</code>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#1. 判断参数个数</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">if</span> <span style="color:#f92672">[</span> <span style="color:#111">$#</span> -lt <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">then</span>
+</span></span><span style="display:flex;"><span> <span style="color:#111">echo</span> Not Enough Arguement!
+</span></span><span style="display:flex;"><span> exit<span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">fi</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#2. 遍历集群所有机器</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">for</span> host in hadoop102 hadoop103 hadoop104
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">do</span>
+</span></span><span style="display:flex;"><span> <span style="color:#111">echo</span> <span style="color:#f92672">====================</span> <span style="color:#111">$host</span> <span style="color:#f92672">====================</span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">#3. 遍历所有目录，挨个发送</span>
+</span></span><span style="display:flex;"><span> <span style="color:#00a8c8">for</span> file in <span style="color:#111">$@</span>
+</span></span><span style="display:flex;"><span> <span style="color:#00a8c8">do</span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">#4. 判断文件是否存在</span>
+</span></span><span style="display:flex;"><span> <span style="color:#00a8c8">if</span> <span style="color:#f92672">[</span> -e <span style="color:#111">$file</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span> <span style="color:#00a8c8">then</span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">#5. 获取父目录</span>
+</span></span><span style="display:flex;"><span> <span style="color:#111">pdir</span><span style="color:#f92672">=</span><span style="color:#00a8c8">$(</span><span style="color:#111">cd</span> -P <span style="color:#00a8c8">$(</span>dirname <span style="color:#111">$file</span><span style="color:#00a8c8">)</span><span style="color:#111">;</span> <span style="color:#111">pwd</span><span style="color:#00a8c8">)</span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">#6. 获取当前文件的名称</span>
+</span></span><span style="display:flex;"><span> <span style="color:#111">fname</span><span style="color:#f92672">=</span><span style="color:#00a8c8">$(</span>basename <span style="color:#111">$file</span><span style="color:#00a8c8">)</span>
+</span></span><span style="display:flex;"><span> ssh <span style="color:#111">$host</span> <span style="color:#d88200">&#34;mkdir -p </span><span style="color:#111">$pdir</span><span style="color:#d88200">&#34;</span>
+</span></span><span style="display:flex;"><span> rsync -av <span style="color:#111">$pdir</span>/<span style="color:#111">$fname</span> <span style="color:#111">$host</span>:<span style="color:#111">$pdir</span>
+</span></span><span style="display:flex;"><span> <span style="color:#00a8c8">else</span>
+</span></span><span style="display:flex;"><span> <span style="color:#111">echo</span> <span style="color:#111">$file</span> does not exists!
+</span></span><span style="display:flex;"><span> <span style="color:#00a8c8">fi</span>
+</span></span><span style="display:flex;"><span> <span style="color:#00a8c8">done</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">done</span>
+</span></span></code></pre></div><p>b. 修改<code>xsync</code>脚本权限，并将脚本复制到<code>/bin</code>中，以便全局调用</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chmod +x xsync
+</span></span><span style="display:flex;"><span>sudo cp xsync /bin/
+</span></span></code></pre></div><p>c. 使用<code>xsync</code>脚本将<code>kafka</code>部署至其他服务器</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xsync ../Applications/kafka/
+</span></span></code></pre></div><h2 id="other-references"id="other-references"
+>Other References 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/hadoop3xbasics/#other-references&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><ul>
+<li>
+<p>中文教程 - 尚硅谷Bilibili</p>
+<p><a href="https://www.bilibili.com/video/BV1Qp4y1n7EN/">尚硅谷大数据Hadoop教程，hadoop3.x搭建到集群调优，百万播放_哔哩哔哩_bilibili</a></p>
+</li>
+<li>
+<p>官方文档 - Apache Hadoop 3.3.6</p>
+<p><a href="https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html">Apache Hadoop 3.3.6 – Hadoop: Setting up a Single Node Cluster.</a></p>
+</li>
+<li>
+<p>建议学习路线图 - 尚硅谷Bilibili</p>
+<p><a href="https://www.bilibili.com/read/cv5213600">2023最新大数据学习路线图</a></p>
+</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Chris Wang © 2024 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script>
+
+
+var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+setTheme(savedTheme);
+
+</script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
+</html>

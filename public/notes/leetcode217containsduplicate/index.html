@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>Chris Wang Personal Showcase | LeetCode 217 Contains Duplicate</title>
+    <meta name="description" content="LeetCode 217 - Determine if an array contains duplicate numbers using hash set.">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="http://localhost:1313/">
+            
+            <b style="font-weight: 800;">CW</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/quickaccess/"> Quick Access</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/notes/"> Notes &amp; Blogs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Demos and APIs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> Site Documentation</a>
+                </li>
+             
+            <li class="nav-item" id="dark_mode_button">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">LeetCode 217 Contains Duplicate</h1>
+        </div>
+        
+        <p class="text-center fs-4 fst-italic serif">LeetCode 217 - Determine if an array contains duplicate numbers using hash set.</p>
+        
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created Jul 1, 2021 - 
+                
+                Last updated: Jul 1, 2021
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                    
+                    <span class="badge tag-badge">docs</span>
+                    
+                    <span class="badge tag-badge">how-to</span>
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <h1 id="leetcode-217-contains-duplicate"id="leetcode-217-contains-duplicate"
+>LeetCode 217: Contains Duplicate 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/leetcode217containsduplicate/#leetcode-217-contains-duplicate&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h1><p>Created: September 19, 2024 5:26 PM
+Labels &amp; Language: C++, LeetCode, Python</p>
+<h2 id="description"id="description"
+>Description 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/leetcode217containsduplicate/#description&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p><a href="https://leetcode.com/problems/contains-duplicate/description/">https://leetcode.com/problems/contains-duplicate/description/</a></p>
+<p>Given an integer array <code>nums</code>, return <code>true</code> if any value appears <strong>at least twice</strong> in the array, and return <code>false</code> if every element is distinct.</p>
+<h2 id="leetcode-217-contains-duplicate-1"id="leetcode-217-contains-duplicate-1"
+>LeetCode 217: Contains Duplicate 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/leetcode217containsduplicate/#leetcode-217-contains-duplicate-1&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><h3 id="approach-hash-set"id="approach-hash-set"
+>Approach: Hash Set 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/leetcode217containsduplicate/#approach-hash-set&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><p>The problem is to determine if any integer appears at least twice in the given integer array <code>nums</code>. To efficiently check for duplicates, we can use a hash set. The main idea is to leverage the properties of a hash set, which allows for fast membership testing and ensures that all elements are unique.</p>
+<ol>
+<li><strong>Initialize a Hash Set</strong>
+<ul>
+<li>Create an empty hash set (or unordered set in C++) to store the unique elements encountered while iterating through the array.</li>
+</ul>
+</li>
+<li><strong>Iterate Through the Array</strong>
+<ul>
+<li>Loop through each element in the array <code>nums</code>.</li>
+<li>For each element, check if it is already present in the hash set.</li>
+</ul>
+</li>
+<li><strong>Check for Duplicates</strong>
+<ul>
+<li>If the current element is found in the hash set (using <code>find</code> or a similar method), it means that this value has been seen before, and we can immediately return <code>true</code>.</li>
+<li>If the current element is not in the hash set, insert it into the set for future checks.</li>
+</ul>
+</li>
+<li><strong>Return Result</strong>
+<ul>
+<li>If the loop completes without finding any duplicates, return <code>false</code>, indicating that all elements in the array are distinct.</li>
+</ul>
+</li>
+</ol>
+<h3 id="complexity"id="complexity"
+>Complexity 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/leetcode217containsduplicate/#complexity&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><ul>
+<li><strong>Time Complexity: O(n)</strong></li>
+</ul>
+<p>The algorithm iterates through the array once, and each insertion and lookup operation in the hash set takes average O(1) time. Therefore, the overall complexity is linear with respect to the number of elements in the array.</p>
+<ul>
+<li><strong>Space Complexity: O(n)</strong></li>
+</ul>
+<p>In the worst case, if all elements are distinct, we would store all n elements in the hash set, leading to linear space usage.</p>
+<h3 id="solution--c"id="solution--c"
+>Solution → C++ 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/leetcode217containsduplicate/#solution--c&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#00a8c8">class</span> <span style="color:#75af00">Solution</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">bool</span> <span style="color:#111">containsDuplicate</span><span style="color:#111">(</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;&amp;</span> <span style="color:#111">nums</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">unordered_set</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#111">hashTable</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">nums</span><span style="color:#111">.</span><span style="color:#111">size</span><span style="color:#111">();</span> <span style="color:#111">i</span> <span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">hashTable</span><span style="color:#111">.</span><span style="color:#111">find</span><span style="color:#111">(</span><span style="color:#111">nums</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">])</span> <span style="color:#f92672">!=</span> <span style="color:#111">hashTable</span><span style="color:#111">.</span><span style="color:#111">end</span><span style="color:#111">())</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">return</span> <span style="color:#111">true</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">else</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">hashTable</span><span style="color:#111">.</span><span style="color:#111">insert</span><span style="color:#111">(</span><span style="color:#111">nums</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">false</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">};</span>
+</span></span></code></pre></div><h3 id="solution--python"id="solution--python"
+>Solution → Python 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/leetcode217containsduplicate/#solution--python&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00a8c8">class</span> <span style="color:#75af00">Solution</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">def</span> <span style="color:#75af00">containsDuplicate</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">,</span> <span style="color:#111">nums</span><span style="color:#111">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">hash_table</span> <span style="color:#f92672">=</span> <span style="color:#111">set</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">num</span> <span style="color:#f92672">in</span> <span style="color:#111">nums</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">if</span> <span style="color:#111">num</span> <span style="color:#f92672">in</span> <span style="color:#111">hash_table</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">return</span> <span style="color:#00a8c8">True</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">else</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">hash_table</span><span style="color:#f92672">.</span><span style="color:#111">add</span><span style="color:#111">(</span><span style="color:#111">num</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#00a8c8">False</span>
+</span></span></code></pre></div>
+        </div>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Chris Wang © 2024 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script>
+
+
+var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+setTheme(savedTheme);
+
+</script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
+</html>

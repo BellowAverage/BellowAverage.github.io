@@ -3,7 +3,7 @@ title: "View & Download CV"
 date: 2024-10-01
 lastmod: 2024-10-01
 draft: false
-garden_tags: ["bamboo", "food"]
+garden_tags: ["CV"]
 summary: " "
 status: "seeding"
 ---
@@ -38,23 +38,17 @@ status: "seeding"
 ## Skills
 
 ### Languages & Frameworks Proficiency:
-- C++
-- Python
-- Go
-- SQL
-- R
-- Django, Nginx, Uwsgi
-- Hugo
+- C++ | Python | Go | SQL | R
+- Django, Nginx, Uwsgi | Hugo
 - Pandas, Sklearn, PyTorch, TensorFlow
 - Pentaho Kettle Spoon
-- Unreal C++ & Blueprints
-- Pygame
+- Unreal C++ & Blueprints | Pygame
 - Excel VBA
 - HTML, CSS, JavaScript
 
 ### Environments & Tools Proficiency:
 - Linux Ubuntu, CentOS
-- Microsoft Azure, Alibaba Cloud, Tencent Cloud
+- Microsoft Azure Cloud, Alibaba Cloud, Tencent Cloud
 - Git, GitHub
 - VSCode, PyCharm, Visual Studio
 - MySQL Workbench

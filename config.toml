@@ -9,7 +9,7 @@ copyright = "Chris Wang ©"
 [params]
   name = "Chris Wang"
   description = "MSDS 431 Data Engineering Assignment"
-  initials = "Chris"
+  initials = "CW"
   googleAnalytics = ""
 
   [[params.social]]
@@ -36,11 +36,11 @@ copyright = "Chris Wang ©"
 [menu]
   [[menu.main]]
     name = "Quick Access"
-    url = "/garden/"
+    url = "/quickaccess/"
     weight = 1
   [[menu.main]]
     name = "Notes & Blogs"
-    url = "/projects/"
+    url = "/notes/"
     weight = 2
   [[menu.main]]
     name = "Demos and APIs"

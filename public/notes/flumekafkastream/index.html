@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>Chris Wang Personal Showcase | Flume &amp; Kafka Stream</title>
+    <meta name="description" content="Flume collects nginx logs into Kafka, managing servers efficiently with Flume and Kafka stream.">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="http://localhost:1313/">
+            
+            <b style="font-weight: 800;">CW</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/quickaccess/"> Quick Access</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/notes/"> Notes &amp; Blogs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Demos and APIs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> Site Documentation</a>
+                </li>
+             
+            <li class="nav-item" id="dark_mode_button">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">Flume &amp; Kafka Stream</h1>
+        </div>
+        
+        <p class="text-center fs-4 fst-italic serif">Flume collects nginx logs into Kafka, managing servers efficiently with Flume and Kafka stream.</p>
+        
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created Jul 1, 2021 - 
+                
+                Last updated: Jul 1, 2021
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                    
+                    <span class="badge tag-badge">docs</span>
+                    
+                    <span class="badge tag-badge">how-to</span>
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <h1 id="flume--kafka-stream"id="flume--kafka-stream"
+>Flume &amp; Kafka Stream 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/flumekafkastream/#flume--kafka-stream&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h1><p>Created: September 12, 2024 1:48 PM
+Labels &amp; Language: Java, Kafka, flume
+Source: <a href="https://flume.apache.org/releases/content/1.11.0/FlumeUserGuide.html">https://flume.apache.org/releases/content/1.11.0/FlumeUserGuide.html</a></p>
+<h2 id="引言"id="引言"
+>引言 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/flumekafkastream/#引言&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p>将<code>nginx</code>日志通过<code>Flume</code>采集到Kafka。在这个过程中，<code>nginx</code>作为<code>source</code>，<code>kafka</code>作为<code>sink</code>的对象。<code>Flume</code>是一个强大的日志采集工具，<code>kafka</code>则可以有效地对服务器进行分布式管理。</p>
+<h2 id="flume--kafka-日志文件流"id="flume--kafka-日志文件流"
+>Flume &amp; Kafka 日志文件流 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/flumekafkastream/#flume--kafka-日志文件流&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><h3 id="https-requests--nginx--flume--kafka"id="https-requests--nginx--flume--kafka"
+>Https Requests → Nginx → Flume → Kafka 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/flumekafkastream/#https-requests--nginx--flume--kafka&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><ol>
+<li>测试Flume功能 - 使用<code>Linux nc</code>命令测试<code>Flume</code>是否配置正确</li>
+</ol>
+<pre tabindex="0"><code># Name the components on this agenta1.sources= r1
+a1.sinks= k1
+a1.channels= c1
+
+# Describe/configure the sourcea1.sources.r1.type= netcat
+a1.sources.r1.bind= localhost
+a1.sources.r1.port= 44444
+
+# Describe the sinka1.sinks.k1.type= logger
+
+# Use a channel which buffers events in memorya1.channels.c1.type= memory
+a1.channels.c1.capacity= 1000
+a1.channels.c1.transactionCapacity= 100
+
+# Bind the source and sink to the channela1.sources.r1.channels= c1
+a1.sinks.k1.channel= c1
+
+# Flume启动
+bin/flume-ng agent --conf conf --conf-file example.conf --name a1
+bin/flume-ng agent -n a1 -c conf/ -f job/net-flume-logger.conf -Dflume.root.logger=INFO,console
+</code></pre><p>使用nc命令监听指定接口，收到返回，测试成功：</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#111">2023</span><span style="color:#f92672">-</span><span style="color:#111">08</span><span style="color:#f92672">-</span><span style="color:#111">02</span> <span style="color:#111">19</span><span style="color:#111">:</span><span style="color:#111">37</span><span style="color:#111">:</span><span style="color:#111">33</span><span style="color:#111">,</span><span style="color:#111">287</span> <span style="color:#111">(</span><span style="color:#111">SinkRunner</span><span style="color:#f92672">-</span><span style="color:#111">PollingRunner</span><span style="color:#f92672">-</span><span style="color:#111">DefaultSinkProcessor</span><span style="color:#111">)</span> <span style="color:#f92672">[</span><span style="color:#111">INFO</span> <span style="color:#f92672">-</span> <span style="color:#111">org</span><span style="color:#111">.</span><span style="color:#75af00">apache</span><span style="color:#111">.</span><span style="color:#75af00">flume</span><span style="color:#111">.</span><span style="color:#75af00">sink</span><span style="color:#111">.</span><span style="color:#75af00">LoggerSink</span><span style="color:#111">.</span><span style="color:#75af00">process</span><span style="color:#111">(</span><span style="color:#111">LoggerSink</span><span style="color:#111">.</span><span style="color:#75af00">java</span><span style="color:#111">:</span><span style="color:#111">95</span><span style="color:#111">)</span><span style="color:#f92672">]</span> <span style="color:#111">Event</span><span style="color:#111">:</span> <span style="color:#111">{</span> <span style="color:#111">headers</span><span style="color:#111">:{}</span> <span style="color:#111">body</span><span style="color:#111">:</span> <span style="color:#111">31</span> <span style="color:#111">39</span> <span style="color:#111">32</span> <span style="color:#111">2E</span> <span style="color:#111">31</span> <span style="color:#111">36</span> <span style="color:#111">38</span> <span style="color:#111">2E</span> <span style="color:#111">31</span> <span style="color:#111">30</span> <span style="color:#111">2E</span> <span style="color:#111">31</span> <span style="color:#111">20</span> <span style="color:#111">2D</span> <span style="color:#111">20</span> <span style="color:#111">2D</span> <span style="color:#111">192</span><span style="color:#111">.</span><span style="color:#75af00">168</span><span style="color:#111">.</span><span style="color:#75af00">10</span><span style="color:#111">.</span><span style="color:#75af00">1</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">2023</span><span style="color:#f92672">-</span><span style="color:#111">08</span><span style="color:#f92672">-</span><span style="color:#111">02</span> <span style="color:#111">19</span><span style="color:#111">:</span><span style="color:#111">39</span><span style="color:#111">:</span><span style="color:#111">07</span><span style="color:#111">,</span><span style="color:#111">300</span> <span style="color:#111">(</span><span style="color:#111">SinkRunner</span><span style="color:#f92672">-</span><span style="color:#111">PollingRunner</span><span style="color:#f92672">-</span><span style="color:#111">DefaultSinkProcessor</span><span style="color:#111">)</span> <span style="color:#f92672">[</span><span style="color:#111">INFO</span> <span style="color:#f92672">-</span> <span style="color:#111">org</span><span style="color:#111">.</span><span style="color:#75af00">apache</span><span style="color:#111">.</span><span style="color:#75af00">flume</span><span style="color:#111">.</span><span style="color:#75af00">sink</span><span style="color:#111">.</span><span style="color:#75af00">LoggerSink</span><span style="color:#111">.</span><span style="color:#75af00">process</span><span style="color:#111">(</span><span style="color:#111">LoggerSink</span><span style="color:#111">.</span><span style="color:#75af00">java</span><span style="color:#111">:</span><span style="color:#111">95</span><span style="color:#111">)</span><span style="color:#f92672">]</span> <span style="color:#111">Event</span><span style="color:#111">:</span> <span style="color:#111">{</span> <span style="color:#111">headers</span><span style="color:#111">:{}</span> <span style="color:#111">body</span><span style="color:#111">:</span> <span style="color:#111">31</span> <span style="color:#111">39</span> <span style="color:#111">32</span> <span style="color:#111">2E</span> <span style="color:#111">31</span> <span style="color:#111">36</span> <span style="color:#111">38</span> <span style="color:#111">2E</span> <span style="color:#111">31</span> <span style="color:#111">30</span> <span style="color:#111">2E</span> <span style="color:#111">31</span> <span style="color:#111">20</span> <span style="color:#111">2D</span> <span style="color:#111">20</span> <span style="color:#111">2D</span> <span style="color:#111">192</span><span style="color:#111">.</span><span style="color:#75af00">168</span><span style="color:#111">.</span><span style="color:#75af00">10</span><span style="color:#111">.</span><span style="color:#75af00">1</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">2023</span><span style="color:#f92672">-</span><span style="color:#111">08</span><span style="color:#f92672">-</span><span style="color:#111">02</span> <span style="color:#111">19</span><span style="color:#111">:</span><span style="color:#111">39</span><span style="color:#111">:</span><span style="color:#111">29</span><span style="color:#111">,</span><span style="color:#111">518</span> <span style="color:#111">(</span><span style="color:#111">SinkRunner</span><span style="color:#f92672">-</span><span style="color:#111">PollingRunner</span><span style="color:#f92672">-</span><span style="color:#111">DefaultSinkProcessor</span><span style="color:#111">)</span> <span style="color:#f92672">[</span><span style="color:#111">INFO</span> <span style="color:#f92672">-</span> <span style="color:#111">org</span><span style="color:#111">.</span><span style="color:#75af00">apache</span><span style="color:#111">.</span><span style="color:#75af00">flume</span><span style="color:#111">.</span><span style="color:#75af00">sink</span><span style="color:#111">.</span><span style="color:#75af00">LoggerSink</span><span style="color:#111">.</span><span style="color:#75af00">process</span><span style="color:#111">(</span><span style="color:#111">LoggerSink</span><span style="color:#111">.</span><span style="color:#75af00">java</span><span style="color:#111">:</span><span style="color:#111">95</span><span style="color:#111">)</span><span style="color:#f92672">]</span> <span style="color:#111">Event</span><span style="color:#111">:</span> <span style="color:#111">{</span> <span style="color:#111">headers</span><span style="color:#111">:{}</span> <span style="color:#111">body</span><span style="color:#111">:</span> <span style="color:#111">31</span> <span style="color:#111">39</span> <span style="color:#111">32</span> <span style="color:#111">2E</span> <span style="color:#111">31</span> <span style="color:#111">36</span> <span style="color:#111">38</span> <span style="color:#111">2E</span> <span style="color:#111">31</span> <span style="color:#111">30</span> <span style="color:#111">2E</span> <span style="color:#111">31</span> <span style="color:#111">20</span> <span style="color:#111">2D</span> <span style="color:#111">20</span> <span style="color:#111">2D</span> <span style="color:#111">192</span><span style="color:#111">.</span><span style="color:#75af00">168</span><span style="color:#111">.</span><span style="color:#75af00">10</span><span style="color:#111">.</span><span style="color:#75af00">1</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#111">}</span>
+</span></span></code></pre></div><ol>
+<li>编写<code>Flume</code>配置文件实现将<code>nginx</code>日志作为源，<code>sink</code>进入<code>kafka</code></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sources</span> <span style="color:#f92672">=</span> <span style="color:#111">s1</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">channels</span> <span style="color:#f92672">=</span> <span style="color:#111">c1</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sinks</span> <span style="color:#f92672">=</span> <span style="color:#111">k1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sources</span><span style="color:#111">.</span><span style="color:#75af00">s1</span><span style="color:#111">.</span><span style="color:#75af00">type</span> <span style="color:#f92672">=</span> <span style="color:#111">exec</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sources</span><span style="color:#111">.</span><span style="color:#75af00">s1</span><span style="color:#111">.</span><span style="color:#75af00">command</span> <span style="color:#f92672">=</span> <span style="color:#111">tail</span> <span style="color:#f92672">-</span><span style="color:#111">F</span> <span style="color:#f92672">/</span><span style="color:#111">var</span><span style="color:#f92672">/</span><span style="color:#111">log</span><span style="color:#f92672">/</span><span style="color:#111">nginx</span><span style="color:#f92672">/</span><span style="color:#111">access</span><span style="color:#111">.</span><span style="color:#75af00">log</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">channels</span><span style="color:#111">.</span><span style="color:#75af00">c1</span><span style="color:#111">.</span><span style="color:#75af00">type</span> <span style="color:#f92672">=</span> <span style="color:#111">memory</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">channels</span><span style="color:#111">.</span><span style="color:#75af00">c1</span><span style="color:#111">.</span><span style="color:#75af00">capacity</span> <span style="color:#f92672">=</span> <span style="color:#111">1000</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">channels</span><span style="color:#111">.</span><span style="color:#75af00">c1</span><span style="color:#111">.</span><span style="color:#75af00">transactionCapacity</span> <span style="color:#f92672">=</span> <span style="color:#111">100</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sinks</span><span style="color:#111">.</span><span style="color:#75af00">k1</span><span style="color:#111">.</span><span style="color:#75af00">type</span> <span style="color:#f92672">=</span> <span style="color:#111">org</span><span style="color:#111">.</span><span style="color:#75af00">apache</span><span style="color:#111">.</span><span style="color:#75af00">flume</span><span style="color:#111">.</span><span style="color:#75af00">sink</span><span style="color:#111">.</span><span style="color:#75af00">kafka</span><span style="color:#111">.</span><span style="color:#75af00">KafkaSink</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sinks</span><span style="color:#111">.</span><span style="color:#75af00">k1</span><span style="color:#111">.</span><span style="color:#75af00">kafka</span><span style="color:#111">.</span><span style="color:#75af00">topic</span> <span style="color:#f92672">=</span> <span style="color:#111">moercredit_log_test</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sinks</span><span style="color:#111">.</span><span style="color:#75af00">k1</span><span style="color:#111">.</span><span style="color:#75af00">kafka</span><span style="color:#111">.</span><span style="color:#75af00">bootstrap</span><span style="color:#111">.</span><span style="color:#75af00">servers</span> <span style="color:#f92672">=</span> <span style="color:#111">localhost</span><span style="color:#111">:</span><span style="color:#111">9092</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sinks</span><span style="color:#111">.</span><span style="color:#75af00">k1</span><span style="color:#111">.</span><span style="color:#75af00">kafka</span><span style="color:#111">.</span><span style="color:#75af00">flumeBatchSize</span> <span style="color:#f92672">=</span> <span style="color:#111">20</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sinks</span><span style="color:#111">.</span><span style="color:#75af00">k1</span><span style="color:#111">.</span><span style="color:#75af00">kafka</span><span style="color:#111">.</span><span style="color:#75af00">producer</span><span style="color:#111">.</span><span style="color:#75af00">acks</span> <span style="color:#f92672">=</span> <span style="color:#111">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sinks</span><span style="color:#111">.</span><span style="color:#75af00">k1</span><span style="color:#111">.</span><span style="color:#75af00">kafka</span><span style="color:#111">.</span><span style="color:#75af00">producer</span><span style="color:#111">.</span><span style="color:#75af00">linger</span><span style="color:#111">.</span><span style="color:#75af00">ms</span> <span style="color:#f92672">=</span> <span style="color:#111">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sinks</span><span style="color:#111">.</span><span style="color:#75af00">k1</span><span style="color:#111">.</span><span style="color:#75af00">kafka</span><span style="color:#111">.</span><span style="color:#75af00">producer</span><span style="color:#111">.</span><span style="color:#75af00">compression</span><span style="color:#111">.</span><span style="color:#75af00">type</span> <span style="color:#f92672">=</span> <span style="color:#111">snappy</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sources</span><span style="color:#111">.</span><span style="color:#75af00">s1</span><span style="color:#111">.</span><span style="color:#75af00">channels</span> <span style="color:#f92672">=</span> <span style="color:#111">c1</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">pro</span><span style="color:#111">.</span><span style="color:#75af00">sinks</span><span style="color:#111">.</span><span style="color:#75af00">k1</span><span style="color:#111">.</span><span style="color:#75af00">channel</span> <span style="color:#f92672">=</span> <span style="color:#111">c1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">---------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">bin</span><span style="color:#f92672">/</span><span style="color:#111">flume</span><span style="color:#f92672">-</span><span style="color:#111">ng</span> <span style="color:#111">agent</span> <span style="color:#f92672">-</span><span style="color:#111">n</span> <span style="color:#111">pro</span> <span style="color:#f92672">-</span><span style="color:#111">c</span> <span style="color:#111">conf</span><span style="color:#f92672">/</span> <span style="color:#f92672">-</span><span style="color:#111">f</span> <span style="color:#111">conf</span><span style="color:#f92672">/</span><span style="color:#111">flume2kafka</span><span style="color:#111">.</span><span style="color:#75af00">conf</span> <span style="color:#f92672">-</span><span style="color:#111">Dflume</span><span style="color:#111">.</span><span style="color:#75af00">root</span><span style="color:#111">.</span><span style="color:#75af00">logger</span><span style="color:#f92672">=</span><span style="color:#111">INFO</span><span style="color:#111">,</span><span style="color:#111">console</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">bin</span><span style="color:#f92672">/</span><span style="color:#111">kafka</span><span style="color:#f92672">-</span><span style="color:#111">console</span><span style="color:#f92672">-</span><span style="color:#111">consumer</span><span style="color:#111">.</span><span style="color:#75af00">sh</span> <span style="color:#f92672">--</span><span style="color:#111">bootstrap</span><span style="color:#f92672">-</span><span style="color:#111">server</span> <span style="color:#111">localhost</span><span style="color:#111">:</span><span style="color:#111">9092</span> <span style="color:#f92672">--</span><span style="color:#111">topic</span> <span style="color:#111">moercredit_log_test</span> <span style="color:#f92672">--</span><span style="color:#111">from</span><span style="color:#f92672">-</span><span style="color:#111">beginning</span>
+</span></span></code></pre></div><ol>
+<li>先后分别打开<code>zookeeper</code>，<code>kafka</code>，<code>flume</code>服务。并运行<code>http</code>自动访问<code>python</code>脚本</li>
+<li><code>kafka</code>信息接受窗口收到返回，成功：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#111">kafka获得日志流数据形如</span><span style="color:#960050;background-color:#1e0010">：</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">192</span><span style="color:#111">.</span><span style="color:#75af00">168</span><span style="color:#111">.</span><span style="color:#75af00">10</span><span style="color:#111">.</span><span style="color:#75af00">102</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#f92672">[</span><span style="color:#111">03</span><span style="color:#f92672">/</span><span style="color:#111">Aug</span><span style="color:#f92672">/</span><span style="color:#111">2023</span><span style="color:#111">:</span><span style="color:#111">02</span><span style="color:#111">:</span><span style="color:#111">06</span><span style="color:#111">:</span><span style="color:#111">58</span> <span style="color:#f92672">+</span><span style="color:#111">0800</span><span style="color:#f92672">]</span> <span style="color:#d88200">&#34;GET /index/ HTTP/1.1&#34;</span> <span style="color:#111">200</span> <span style="color:#111">9825</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/75.0&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">192</span><span style="color:#111">.</span><span style="color:#75af00">168</span><span style="color:#111">.</span><span style="color:#75af00">10</span><span style="color:#111">.</span><span style="color:#75af00">103</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#f92672">[</span><span style="color:#111">03</span><span style="color:#f92672">/</span><span style="color:#111">Aug</span><span style="color:#f92672">/</span><span style="color:#111">2023</span><span style="color:#111">:</span><span style="color:#111">02</span><span style="color:#111">:</span><span style="color:#111">06</span><span style="color:#111">:</span><span style="color:#111">58</span> <span style="color:#f92672">+</span><span style="color:#111">0800</span><span style="color:#f92672">]</span> <span style="color:#d88200">&#34;GET /index/ HTTP/1.1&#34;</span> <span style="color:#111">200</span> <span style="color:#111">9825</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Zune 3.0)&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">192</span><span style="color:#111">.</span><span style="color:#75af00">168</span><span style="color:#111">.</span><span style="color:#75af00">10</span><span style="color:#111">.</span><span style="color:#75af00">104</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#f92672">[</span><span style="color:#111">03</span><span style="color:#f92672">/</span><span style="color:#111">Aug</span><span style="color:#f92672">/</span><span style="color:#111">2023</span><span style="color:#111">:</span><span style="color:#111">02</span><span style="color:#111">:</span><span style="color:#111">06</span><span style="color:#111">:</span><span style="color:#111">58</span> <span style="color:#f92672">+</span><span style="color:#111">0800</span><span style="color:#f92672">]</span> <span style="color:#d88200">&#34;GET /index/ HTTP/1.1&#34;</span> <span style="color:#111">200</span> <span style="color:#111">9825</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Opera/9.63 (X11; Linux x86_64; U; ru) Presto/2.1.1&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">192</span><span style="color:#111">.</span><span style="color:#75af00">168</span><span style="color:#111">.</span><span style="color:#75af00">10</span><span style="color:#111">.</span><span style="color:#75af00">1</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#f92672">[</span><span style="color:#111">03</span><span style="color:#f92672">/</span><span style="color:#111">Aug</span><span style="color:#f92672">/</span><span style="color:#111">2023</span><span style="color:#111">:</span><span style="color:#111">02</span><span style="color:#111">:</span><span style="color:#111">06</span><span style="color:#111">:</span><span style="color:#111">58</span> <span style="color:#f92672">+</span><span style="color:#111">0800</span><span style="color:#f92672">]</span> <span style="color:#d88200">&#34;GET /index/ HTTP/1.1&#34;</span> <span style="color:#111">200</span> <span style="color:#111">2650</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;python-requests/2.31.0&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">192</span><span style="color:#111">.</span><span style="color:#75af00">168</span><span style="color:#111">.</span><span style="color:#75af00">10</span><span style="color:#111">.</span><span style="color:#75af00">102</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#f92672">[</span><span style="color:#111">03</span><span style="color:#f92672">/</span><span style="color:#111">Aug</span><span style="color:#f92672">/</span><span style="color:#111">2023</span><span style="color:#111">:</span><span style="color:#111">02</span><span style="color:#111">:</span><span style="color:#111">06</span><span style="color:#111">:</span><span style="color:#111">58</span> <span style="color:#f92672">+</span><span style="color:#111">0800</span><span style="color:#f92672">]</span> <span style="color:#d88200">&#34;GET /index/ HTTP/1.1&#34;</span> <span style="color:#111">200</span> <span style="color:#111">9825</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/4.0 (compatible; MSIE 5.0; Linux 2.4.19-4GB i686) Opera 6.11  [en]&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">192</span><span style="color:#111">.</span><span style="color:#75af00">168</span><span style="color:#111">.</span><span style="color:#75af00">10</span><span style="color:#111">.</span><span style="color:#75af00">103</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#f92672">[</span><span style="color:#111">03</span><span style="color:#f92672">/</span><span style="color:#111">Aug</span><span style="color:#f92672">/</span><span style="color:#111">2023</span><span style="color:#111">:</span><span style="color:#111">02</span><span style="color:#111">:</span><span style="color:#111">06</span><span style="color:#111">:</span><span style="color:#111">58</span> <span style="color:#f92672">+</span><span style="color:#111">0800</span><span style="color:#f92672">]</span> <span style="color:#d88200">&#34;GET /index/ HTTP/1.1&#34;</span> <span style="color:#111">200</span> <span style="color:#111">9825</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_2; en-US) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/5.0.343.0 Safari/533.2&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">192</span><span style="color:#111">.</span><span style="color:#75af00">168</span><span style="color:#111">.</span><span style="color:#75af00">10</span><span style="color:#111">.</span><span style="color:#75af00">104</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#f92672">[</span><span style="color:#111">03</span><span style="color:#f92672">/</span><span style="color:#111">Aug</span><span style="color:#f92672">/</span><span style="color:#111">2023</span><span style="color:#111">:</span><span style="color:#111">02</span><span style="color:#111">:</span><span style="color:#111">06</span><span style="color:#111">:</span><span style="color:#111">58</span> <span style="color:#f92672">+</span><span style="color:#111">0800</span><span style="color:#f92672">]</span> <span style="color:#d88200">&#34;GET /index/ HTTP/1.1&#34;</span> <span style="color:#111">200</span> <span style="color:#111">9825</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.2) Gecko/2008110715 ASPLinux/3.0.2-3.0.120asp Firefox/3.0.2&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">192</span><span style="color:#111">.</span><span style="color:#75af00">168</span><span style="color:#111">.</span><span style="color:#75af00">10</span><span style="color:#111">.</span><span style="color:#75af00">1</span> <span style="color:#f92672">-</span> <span style="color:#f92672">-</span> <span style="color:#f92672">[</span><span style="color:#111">03</span><span style="color:#f92672">/</span><span style="color:#111">Aug</span><span style="color:#f92672">/</span><span style="color:#111">2023</span><span style="color:#111">:</span><span style="color:#111">02</span><span style="color:#111">:</span><span style="color:#111">06</span><span style="color:#111">:</span><span style="color:#111">58</span> <span style="color:#f92672">+</span><span style="color:#111">0800</span><span style="color:#f92672">]</span> <span style="color:#d88200">&#34;GET /index/ HTTP/1.1&#34;</span> <span style="color:#111">200</span> <span style="color:#111">2650</span> <span style="color:#d88200">&#34;-&#34;</span> <span style="color:#d88200">&#34;python-requests/2.31.0&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[^</span><span style="color:#111">C</span> <span style="color:#111">mannual</span> <span style="color:#111">stop</span><span style="color:#f92672">]</span> <span style="color:#111">Processed</span> <span style="color:#111">a</span> <span style="color:#111">total</span> <span style="color:#111">of</span> <span style="color:#111">234</span> <span style="color:#111">messages</span>
+</span></span></code></pre></div><ol>
+<li>查看<code>kafka data</code>文件，发现部分乱码，暂无解决。</li>
+</ol>
+<h2 id="other-sources--reference"id="other-sources--reference"
+>Other sources &amp; Reference 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;http://localhost:1313/notes/flumekafkastream/#other-sources--reference&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p><a href="https://flume.apache.org/releases/content/1.11.0/FlumeUserGuide.html">Flume 1.11.0 User Guide — Apache Flume</a></p>
+
+        </div>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Chris Wang © 2024 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script>
+
+
+var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+setTheme(savedTheme);
+
+</script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
+</html>

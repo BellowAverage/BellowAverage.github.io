@@ -7,27 +7,174 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Chris Wang ©</copyright>
-    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Theme Documentation</title>
-      <link>http://localhost:1313/projects/project2/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/project2/</guid>
-      <description>Details on how to create and update content on your site</description>
-    </item>
-    <item>
       <title>Markdown Syntax</title>
-      <link>http://localhost:1313/projects/project1/</link>
+      <link>http://localhost:1313/quickaccess/project1/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/project1/</guid>
+      <guid>http://localhost:1313/quickaccess/project1/</guid>
       <description>Example of markdown syntax you can use to edit your content</description>
     </item>
     <item>
-      <title>Another Project</title>
-      <link>http://localhost:1313/projects/project3/</link>
+      <title>Algorithm Bubble Sort</title>
+      <link>http://localhost:1313/notes/algorithmbubblesort/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/project3/</guid>
+      <guid>http://localhost:1313/notes/algorithmbubblesort/</guid>
+      <description>Explanation and implementation of Bubble Sorting in C++ and Python with complexity analysis.</description>
+    </item>
+    <item>
+      <title>Algorithm Insertion Sort</title>
+      <link>http://localhost:1313/notes/algorithminsertionsort/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/algorithminsertionsort/</guid>
+      <description>Introduction and implementation of Insertion Sort in C++ and Python coding languages.</description>
+    </item>
+    <item>
+      <title>Algorithm Quick Sort</title>
+      <link>http://localhost:1313/notes/algorithmquicksort/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/algorithmquicksort/</guid>
+      <description>Overview of Quick Sort algorithm with complexity analysis in C++ and Python.</description>
+    </item>
+    <item>
+      <title>Algorithm Selection Sort</title>
+      <link>http://localhost:1313/notes/algorithmselectionsort/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/algorithmselectionsort/</guid>
+      <description>Introduction to Selection Sort algorithm in C++ and Python, demonstrating sorting logic.</description>
+    </item>
+    <item>
+      <title>Binary Search Tree</title>
+      <link>http://localhost:1313/notes/binarysearchtree/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/binarysearchtree/</guid>
+      <description>Learn about Binary Search Trees in Python through visuals and practice traversal methods and search algorithms.</description>
+    </item>
+    <item>
+      <title>C&#43;&#43; Reviews</title>
+      <link>http://localhost:1313/notes/c&#43;&#43;reviews/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/c&#43;&#43;reviews/</guid>
+      <description>Review of C++ covering basics, operators, math functions, string functions, and passing arguments to prepare for job seeking.</description>
+    </item>
+    <item>
+      <title>Data Structures and Algorithm</title>
+      <link>http://localhost:1313/notes/datastructuresandalgorithm/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/datastructuresandalgorithm/</guid>
+      <description>Summary: Exploring algorithms, complexity analysis, recursion, time complexity, and data structure classification.</description>
+    </item>
+    <item>
+      <title>Django Basics</title>
+      <link>http://localhost:1313/notes/djangobasics/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/djangobasics/</guid>
+      <description>Tutorial on Django basics, covering app creation, views module, URLs, models, ORM, and more.</description>
+    </item>
+    <item>
+      <title>Flink &amp; Elasticsearch Stream</title>
+      <link>http://localhost:1313/notes/flinkelasticsearchstream/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/flinkelasticsearchstream/</guid>
+      <description>Streamline Nginx log data processing with Flink for real-time computation and visualization using Elasticsearch.</description>
+    </item>
+    <item>
+      <title>Flume &amp; Kafka Stream</title>
+      <link>http://localhost:1313/notes/flumekafkastream/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/flumekafkastream/</guid>
+      <description>Flume collects nginx logs into Kafka, managing servers efficiently with Flume and Kafka stream.</description>
+    </item>
+    <item>
+      <title>Git &amp; GitHub Basics</title>
+      <link>http://localhost:1313/notes/gitgithubbasics/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/gitgithubbasics/</guid>
+      <description>Summary: Git and GitHub basics including setup, common commands, and GitHub setup procedures.</description>
+    </item>
+    <item>
+      <title>Hadoop3 x Basics</title>
+      <link>http://localhost:1313/notes/hadoop3xbasics/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/hadoop3xbasics/</guid>
+      <description>Learn Hadoop3.x basics on CentOS for big data processing, including setup and configurations.</description>
+    </item>
+    <item>
+      <title>Kafka3 x Basics</title>
+      <link>http://localhost:1313/notes/kafka3xbasics/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/kafka3xbasics/</guid>
+      <description>Guide to installing and configuring Kafka on CentOS with basic Zookeeper operations.</description>
+    </item>
+    <item>
+      <title>LeetCode 1 Two Sum</title>
+      <link>http://localhost:1313/notes/leetcode1twosum/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/leetcode1twosum/</guid>
+      <description>Efficiently solve &lt;code&gt;Two Sum&lt;/code&gt; problem using hashmap in Python and C++.</description>
+    </item>
+    <item>
+      <title>LeetCode 121 Best Time to Buy and Sell Stock</title>
+      <link>http://localhost:1313/notes/leetcode121besttimetobuyandsellstock/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/leetcode121besttimetobuyandsellstock/</guid>
+      <description>Maximize profit by buying low and selling high in one transaction.</description>
+    </item>
+    <item>
+      <title>LeetCode 217 Contains Duplicate</title>
+      <link>http://localhost:1313/notes/leetcode217containsduplicate/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/leetcode217containsduplicate/</guid>
+      <description>LeetCode 217 - Determine if an array contains duplicate numbers using hash set.</description>
+    </item>
+    <item>
+      <title>LeetCode 238 Product of Array Except Self</title>
+      <link>http://localhost:1313/notes/leetcode238productofarrayexceptself/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/leetcode238productofarrayexceptself/</guid>
+      <description>Compute products of array elements excluding each element efficiently in linear time.</description>
+    </item>
+    <item>
+      <title>LeetCode 2400 Number of Ways to Reach a Position A</title>
+      <link>http://localhost:1313/notes/leetcode2400numberofwaystoreachapositiona/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/leetcode2400numberofwaystoreachapositiona/</guid>
+      <description>LeetCode 2400 calculates ways to reach a position in k steps using combinations.</description>
+    </item>
+    <item>
+      <title>Linux Ubuntu Commands</title>
+      <link>http://localhost:1313/notes/linuxubuntucommands/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/linuxubuntucommands/</guid>
+      <description>Summary: Linux Ubuntu commands for changing file permissions and extracting different archives efficiently.</description>
+    </item>
+    <item>
+      <title>Nginx Access log Generator</title>
+      <link>http://localhost:1313/notes/nginxaccessloggenerator/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/nginxaccessloggenerator/</guid>
+      <description>Generate high traffic Nginx access logs through proxy and header manipulation with Python.</description>
+    </item>
+    <item>
+      <title>React &amp; Django Configuration</title>
+      <link>http://localhost:1313/notes/reactdjangoconfiguration/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/reactdjangoconfiguration/</guid>
+      <description>Configuring React &amp;amp; Django connection with essential steps and framework installation for both.</description>
+    </item>
+    <item>
+      <title>Thoughts on Hugo and Web Apps Development</title>
+      <link>http://localhost:1313/quickaccess/thoughtsonhugoandwebappsdevelopment/</link>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickaccess/thoughtsonhugoandwebappsdevelopment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About the Assigment and This Site</title>
+      <link>http://localhost:1313/quickaccess/abouttheassignmentandthissite/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickaccess/abouttheassignmentandthissite/</guid>
       <description></description>
     </item>
     <item>
@@ -56,20 +203,6 @@
       <link>http://localhost:1313/library/book2/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/library/book2/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Optimizing your daily fur cleaning routine</title>
-      <link>http://localhost:1313/quickaccess/evergreen_example/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/quickaccess/evergreen_example/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>The best trees to fall asleep in 2020</title>
-      <link>http://localhost:1313/quickaccess/growing_example/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/quickaccess/growing_example/</guid>
       <description></description>
     </item>
     <item>
