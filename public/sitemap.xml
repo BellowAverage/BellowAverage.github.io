@@ -5,14 +5,29 @@
     <loc>http://localhost:1313/quickaccess/abouttheassignmentandthissite/</loc>
     <lastmod>2024-10-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/featuredarticles/djangobasics/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/quickaccess/thoughtsonhugoandwebappsdevelopment/</loc>
     <lastmod>2024-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/featuredarticles/datastructuresandalgorithm/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/quickaccess/viewanddownloadcv/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/featuredarticles/gitgithubbasics/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/featuredarticles/hadoop3xbasics/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/notes/algorithmbubblesort/</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/featuredarticles/nginxaccessloggenerator/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/algorithminsertionsort/</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
@@ -20,16 +35,10 @@
     <loc>http://localhost:1313/notes/algorithmquicksort/</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/algorithmselectionsort/</loc>
-    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/notes/binarysearchtree/</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/c&#43;&#43;reviews/</loc>
-    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notes/datastructuresandalgorithm/</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/djangobasics/</loc>
@@ -74,6 +83,12 @@
     <loc>http://localhost:1313/notes/reactdjangoconfiguration/</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/notes/algorithmselectionsort/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/datastructuresandalgorithm/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2024-10-04T00:00:00+00:00</lastmod>
   </url><url>
@@ -101,18 +116,6 @@
     <loc>http://localhost:1313/notes/</loc>
     <lastmod>2021-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/library_tags/conservation/</loc>
-    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/library_tags/</loc>
-    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/library/book1/</loc>
-    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/library_tags/red-panda/</loc>
-    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/project_tags/c&#43;&#43;/</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -131,16 +134,43 @@
     <loc>http://localhost:1313/project_tags/python/</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/library/</loc>
+    <loc>http://localhost:1313/library_tags/algorithms/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/library/book2/</loc>
+    <loc>http://localhost:1313/library_tags/c&#43;&#43;/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/library_tags/kids/</loc>
+    <loc>http://localhost:1313/library_tags/distributed-calculation/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/featuredarticles/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/library_tags/git/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/library_tags/github/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/library_tags/hadoop/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/library_tags/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/library_tags/nginx/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/library_tags/python/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/quickaccess/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/library_tags/web/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/library_tags/web-service/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>

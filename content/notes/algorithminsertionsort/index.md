@@ -4,7 +4,7 @@ draft: false
 project_tags:
 - LeetCode
 - C++
-status: done
+status: inprogress
 summary: 'Introduction and implementation of Insertion Sort in C++ and Python
   coding languages.'
 title: Algorithm Insertion Sort

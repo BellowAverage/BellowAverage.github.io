@@ -1,5 +1,5 @@
 ---
-title: "★ View & Download CV"
+title: "★ View & Download my Current Traditional CV"
 date: 2024-10-01
 lastmod: 2024-10-01
 draft: false

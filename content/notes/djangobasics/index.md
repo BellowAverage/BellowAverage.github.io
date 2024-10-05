@@ -4,9 +4,9 @@ draft: false
 project_tags:
 - docs
 - how-to
-status: seeding
+status: inprogress
 summary: Tutorial on Django basics, covering app creation, views module, URLs, models,
-  ORM, and more.
+  ORM, and more. Contents have not been completely translated.
 title: Django Basics
 weight: 12
 ---

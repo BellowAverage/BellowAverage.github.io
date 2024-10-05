@@ -17,6 +17,13 @@
       <description></description>
     </item>
     <item>
+      <title>Django Basics</title>
+      <link>http://localhost:1313/featuredarticles/djangobasics/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/featuredarticles/djangobasics/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>★ Reflection on Hugo and Web Apps Development</title>
       <link>http://localhost:1313/quickaccess/thoughtsonhugoandwebappsdevelopment/</link>
       <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
@@ -24,11 +31,32 @@
       <description></description>
     </item>
     <item>
-      <title>★ View &amp; Download CV</title>
+      <title>Data Stuctures Review</title>
+      <link>http://localhost:1313/featuredarticles/datastructuresandalgorithm/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/featuredarticles/datastructuresandalgorithm/</guid>
+      <description>Exploring algorithms, complexity analysis, recursion, time complexity, and data structure classification.</description>
+    </item>
+    <item>
+      <title>★ View &amp; Download my Current Traditional CV</title>
       <link>http://localhost:1313/quickaccess/viewanddownloadcv/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/quickaccess/viewanddownloadcv/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Git &amp; GitHub Basics</title>
+      <link>http://localhost:1313/featuredarticles/gitgithubbasics/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/featuredarticles/gitgithubbasics/</guid>
+      <description>Git and GitHub basics including setup, common commands, and GitHub setup procedures.</description>
+    </item>
+    <item>
+      <title>Hadoop3xBasics</title>
+      <link>http://localhost:1313/featuredarticles/hadoop3xbasics/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/featuredarticles/hadoop3xbasics/</guid>
+      <description>Learn Hadoop3.x basics on CentOS for big data processing, including setup and configurations.</description>
     </item>
     <item>
       <title>Algorithm Bubble Sort</title>
@@ -36,6 +64,13 @@
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/algorithmbubblesort/</guid>
       <description>Explanation and implementation of Bubble Sorting in C++ and Python with complexity analysis.</description>
+    </item>
+    <item>
+      <title>Nginx Access Log Generator</title>
+      <link>http://localhost:1313/featuredarticles/nginxaccessloggenerator/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/featuredarticles/nginxaccessloggenerator/</guid>
+      <description>Generate high traffic Nginx access logs through proxy and header manipulation with Python.</description>
     </item>
     <item>
       <title>Algorithm Insertion Sort</title>
@@ -52,39 +87,25 @@
       <description>Overview of Quick Sort algorithm with complexity analysis in C++ and Python.</description>
     </item>
     <item>
-      <title>Algorithm Selection Sort</title>
-      <link>http://localhost:1313/notes/algorithmselectionsort/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/algorithmselectionsort/</guid>
-      <description>Introduction to Selection Sort algorithm in C++ and Python, demonstrating sorting logic.</description>
-    </item>
-    <item>
       <title>Binary Search Tree</title>
       <link>http://localhost:1313/notes/binarysearchtree/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/binarysearchtree/</guid>
-      <description>Learn about Binary Search Trees in Python through visuals and practice traversal methods and search algorithms.</description>
+      <description>Learn about Binary Search Trees in Python through traversal methods and search algorithms.</description>
     </item>
     <item>
       <title>C&#43;&#43; Reviews</title>
       <link>http://localhost:1313/notes/c&#43;&#43;reviews/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/c&#43;&#43;reviews/</guid>
-      <description>Review of C++ covering basics, operators, math functions, string functions, and passing arguments to prepare for job seeking.</description>
-    </item>
-    <item>
-      <title>Data Structures and Algorithm</title>
-      <link>http://localhost:1313/notes/datastructuresandalgorithm/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/datastructuresandalgorithm/</guid>
-      <description>Summary: Exploring algorithms, complexity analysis, recursion, time complexity, and data structure classification.</description>
+      <description>Review of C++ covering basics, operators, math functions, string functions, and passing arguments.</description>
     </item>
     <item>
       <title>Django Basics</title>
       <link>http://localhost:1313/notes/djangobasics/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/djangobasics/</guid>
-      <description>Tutorial on Django basics, covering app creation, views module, URLs, models, ORM, and more.</description>
+      <description>Tutorial on Django basics, covering app creation, views module, URLs, models, ORM, and more. Contents have not been completely translated.</description>
     </item>
     <item>
       <title>Flink &amp; Elasticsearch Stream</title>
@@ -178,25 +199,25 @@
       <description>Configuring React &amp;amp; Django connection with essential steps and framework installation for both.</description>
     </item>
     <item>
+      <title>Algorithm Selection Sort</title>
+      <link>http://localhost:1313/notes/algorithmselectionsort/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/algorithmselectionsort/</guid>
+      <description>Introduction to Selection Sort algorithm in C++ and Python, demonstrating sorting logic.</description>
+    </item>
+    <item>
+      <title>Data Structures and Algorithm</title>
+      <link>http://localhost:1313/notes/datastructuresandalgorithm/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/datastructuresandalgorithm/</guid>
+      <description>Summary: Exploring algorithms, complexity analysis, recursion, time complexity, and data structure classification.</description>
+    </item>
+    <item>
       <title>My First Post</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Mon, 30 Sep 2024 15:39:05 -0500</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;id=&#34;introduction&#34;&#xD;&#xA;&gt;Introduction &#xD;&#xA;&lt;button &#xD;&#xA;    type=&#34;button&#34; &#xD;&#xA;    class=&#34;anchor&#34; &#xD;&#xA;    data-title=&#34;Copy link to clipboard&#34; &#xD;&#xA;    aria-label=&#34;Copy link to clipboard&#34;&#xD;&#xA;    onclick=&#34;navigator.clipboard.writeText(&amp;#34;http://localhost:1313/posts/my-first-post/#introduction&amp;#34;);this.insertAdjacentHTML(&#39;afterend&#39;, &#39;&lt;div class=link-copied&gt;Link copied&lt;/div&gt;&#39;);setTimeout(() =&gt; { document.querySelectorAll(&#39;.link-copied&#39;).forEach(el =&gt; el.remove()); }, 3000);&#34;&#xD;&#xA;&gt;&#xD;&#xA;    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; height=&#34;1em&#34; viewBox=&#34;0 96 960 960&#34; width=&#34;1em&#34;&gt;&#xD;&#xA;        &lt;path d=&#34;M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z&#34;/&gt;&#xD;&#xA;    &lt;/svg&gt;&#xD;&#xA;&lt;/button&gt;&#xD;&#xA;&lt;/h2&gt;&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;&#xA;&lt;p&gt;Visit the &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; website!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Red Panda</title>
-      <link>http://localhost:1313/library/book1/</link>
-      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/library/book1/</guid>
-      <description>Biology and Conservation of the First Panda</description>
-    </item>
-    <item>
-      <title>Fuji Takes a Walk</title>
-      <link>http://localhost:1313/library/book2/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/library/book2/</guid>
-      <description></description>
     </item>
     <item>
       <title>Nigalya Ponya</title>

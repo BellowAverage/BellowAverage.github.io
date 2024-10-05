@@ -10,18 +10,11 @@
     <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/project_tags/how-to/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Data Structures and Algorithm</title>
-      <link>http://localhost:1313/notes/datastructuresandalgorithm/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/datastructuresandalgorithm/</guid>
-      <description>Summary: Exploring algorithms, complexity analysis, recursion, time complexity, and data structure classification.</description>
-    </item>
-    <item>
       <title>Django Basics</title>
       <link>http://localhost:1313/notes/djangobasics/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/djangobasics/</guid>
-      <description>Tutorial on Django basics, covering app creation, views module, URLs, models, ORM, and more.</description>
+      <description>Tutorial on Django basics, covering app creation, views module, URLs, models, ORM, and more. Contents have not been completely translated.</description>
     </item>
     <item>
       <title>Flink &amp; Elasticsearch Stream</title>
@@ -113,6 +106,13 @@
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/reactdjangoconfiguration/</guid>
       <description>Configuring React &amp;amp; Django connection with essential steps and framework installation for both.</description>
+    </item>
+    <item>
+      <title>Data Structures and Algorithm</title>
+      <link>http://localhost:1313/notes/datastructuresandalgorithm/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/datastructuresandalgorithm/</guid>
+      <description>Summary: Exploring algorithms, complexity analysis, recursion, time complexity, and data structure classification.</description>
     </item>
   </channel>
 </rss>

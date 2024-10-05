@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Featured Articles on Chris Wang Personal Showcase</title>
+    <link>http://localhost:1313/featuredarticles/</link>
+    <description>Recent content in Featured Articles on Chris Wang Personal Showcase</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Chris Wang ©</copyright>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/featuredarticles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Django Basics</title>
+      <link>http://localhost:1313/featuredarticles/djangobasics/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/featuredarticles/djangobasics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Stuctures Review</title>
+      <link>http://localhost:1313/featuredarticles/datastructuresandalgorithm/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/featuredarticles/datastructuresandalgorithm/</guid>
+      <description>Exploring algorithms, complexity analysis, recursion, time complexity, and data structure classification.</description>
+    </item>
+    <item>
+      <title>Git &amp; GitHub Basics</title>
+      <link>http://localhost:1313/featuredarticles/gitgithubbasics/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/featuredarticles/gitgithubbasics/</guid>
+      <description>Git and GitHub basics including setup, common commands, and GitHub setup procedures.</description>
+    </item>
+    <item>
+      <title>Hadoop3xBasics</title>
+      <link>http://localhost:1313/featuredarticles/hadoop3xbasics/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/featuredarticles/hadoop3xbasics/</guid>
+      <description>Learn Hadoop3.x basics on CentOS for big data processing, including setup and configurations.</description>
+    </item>
+    <item>
+      <title>Nginx Access Log Generator</title>
+      <link>http://localhost:1313/featuredarticles/nginxaccessloggenerator/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/featuredarticles/nginxaccessloggenerator/</guid>
+      <description>Generate high traffic Nginx access logs through proxy and header manipulation with Python.</description>
+    </item>
+  </channel>
+</rss>

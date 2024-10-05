@@ -5,8 +5,7 @@ project_tags:
 - Python
 - C++
 status: done
-summary: Learn about Binary Search Trees in Python through visuals and practice traversal
-  methods and search algorithms.
+summary: Learn about Binary Search Trees in Python through traversal methods and search algorithms.
 title: Binary Search Tree
 weight: 9
 ---

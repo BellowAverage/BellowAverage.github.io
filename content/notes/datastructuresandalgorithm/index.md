@@ -8,7 +8,7 @@ status: seeding
 summary: 'Summary: Exploring algorithms, complexity analysis, recursion, time complexity,
   and data structure classification.'
 title: Data Structures and Algorithm
-weight: 11
+weight: 1011
 ---
 
 # Data Structures and Algorithm

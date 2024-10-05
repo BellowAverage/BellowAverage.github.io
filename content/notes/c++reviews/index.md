@@ -5,7 +5,7 @@ project_tags:
 - C++
 status: idea
 summary: 'Review of C++ covering basics, operators, math functions, string
-  functions, and passing arguments to prepare for job seeking.'
+  functions, and passing arguments.'
 title: C++ Reviews
 weight: 10
 ---

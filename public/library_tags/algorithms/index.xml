@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithms on Chris Wang Personal Showcase</title>
+    <link>http://localhost:1313/library_tags/algorithms/</link>
+    <description>Recent content in Algorithms on Chris Wang Personal Showcase</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Chris Wang ©</copyright>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/library_tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Stuctures Review</title>
+      <link>http://localhost:1313/featuredarticles/datastructuresandalgorithm/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/featuredarticles/datastructuresandalgorithm/</guid>
+      <description>Exploring algorithms, complexity analysis, recursion, time complexity, and data structure classification.</description>
+    </item>
+  </channel>
+</rss>

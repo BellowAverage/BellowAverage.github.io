@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on Chris Wang Personal Showcase</title>
+    <link>http://localhost:1313/library_tags/github/</link>
+    <description>Recent content in GitHub on Chris Wang Personal Showcase</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Chris Wang ©</copyright>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/library_tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git &amp; GitHub Basics</title>
+      <link>http://localhost:1313/featuredarticles/gitgithubbasics/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/featuredarticles/gitgithubbasics/</guid>
+      <description>Git and GitHub basics including setup, common commands, and GitHub setup procedures.</description>
+    </item>
+  </channel>
+</rss>

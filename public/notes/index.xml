@@ -31,39 +31,25 @@
       <description>Overview of Quick Sort algorithm with complexity analysis in C++ and Python.</description>
     </item>
     <item>
-      <title>Algorithm Selection Sort</title>
-      <link>http://localhost:1313/notes/algorithmselectionsort/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/algorithmselectionsort/</guid>
-      <description>Introduction to Selection Sort algorithm in C++ and Python, demonstrating sorting logic.</description>
-    </item>
-    <item>
       <title>Binary Search Tree</title>
       <link>http://localhost:1313/notes/binarysearchtree/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/binarysearchtree/</guid>
-      <description>Learn about Binary Search Trees in Python through visuals and practice traversal methods and search algorithms.</description>
+      <description>Learn about Binary Search Trees in Python through traversal methods and search algorithms.</description>
     </item>
     <item>
       <title>C&#43;&#43; Reviews</title>
       <link>http://localhost:1313/notes/c&#43;&#43;reviews/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/c&#43;&#43;reviews/</guid>
-      <description>Review of C++ covering basics, operators, math functions, string functions, and passing arguments to prepare for job seeking.</description>
-    </item>
-    <item>
-      <title>Data Structures and Algorithm</title>
-      <link>http://localhost:1313/notes/datastructuresandalgorithm/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/datastructuresandalgorithm/</guid>
-      <description>Summary: Exploring algorithms, complexity analysis, recursion, time complexity, and data structure classification.</description>
+      <description>Review of C++ covering basics, operators, math functions, string functions, and passing arguments.</description>
     </item>
     <item>
       <title>Django Basics</title>
       <link>http://localhost:1313/notes/djangobasics/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/djangobasics/</guid>
-      <description>Tutorial on Django basics, covering app creation, views module, URLs, models, ORM, and more.</description>
+      <description>Tutorial on Django basics, covering app creation, views module, URLs, models, ORM, and more. Contents have not been completely translated.</description>
     </item>
     <item>
       <title>Flink &amp; Elasticsearch Stream</title>
@@ -155,6 +141,20 @@
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/reactdjangoconfiguration/</guid>
       <description>Configuring React &amp;amp; Django connection with essential steps and framework installation for both.</description>
+    </item>
+    <item>
+      <title>Algorithm Selection Sort</title>
+      <link>http://localhost:1313/notes/algorithmselectionsort/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/algorithmselectionsort/</guid>
+      <description>Introduction to Selection Sort algorithm in C++ and Python, demonstrating sorting logic.</description>
+    </item>
+    <item>
+      <title>Data Structures and Algorithm</title>
+      <link>http://localhost:1313/notes/datastructuresandalgorithm/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/datastructuresandalgorithm/</guid>
+      <description>Summary: Exploring algorithms, complexity analysis, recursion, time complexity, and data structure classification.</description>
     </item>
   </channel>
 </rss>

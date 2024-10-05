@@ -8,7 +8,7 @@ status: inprogress
 summary: 'Introduction to Selection Sort algorithm in C++ and Python, demonstrating
   sorting logic.'
 title: Algorithm Selection Sort
-weight: 8
+weight: 1008
 ---
 
 # Algorithm: Selection Sort
