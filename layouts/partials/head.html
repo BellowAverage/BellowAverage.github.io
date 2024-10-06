@@ -26,4 +26,8 @@
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
     <meta name="description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ end }}{{ end }}">
+
+    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+
+
 </head>

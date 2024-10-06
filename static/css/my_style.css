@@ -55,3 +55,7 @@ code {
 #dark_mode_button{
     margin-top: 0.6rem;
 }
+
+.card-title.quick-access-title {
+    font-family: 'Georgia', serif;
+}
