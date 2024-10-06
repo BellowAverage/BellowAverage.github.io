@@ -36,3 +36,5 @@ Connecting Hugo to GitHub Pages is quick and simple, and it is viable because of
 Hugo utilizes Go's template syntax that allows modifying html files in a way of programming. This is not exclusive to Hugo, but Hugo's is seemingly easier to understand and more powerful. It can handle things like loops, conditionals, and partials.
 
 And the existance of it surprises me because I used to think that this cannot be done if there is no backend server running the codes to construct. Now I understand that even though Hugo is a static site generator, it leverages Go's templating system to provide dynamic-like functionality during the build process, not during runtime. This means that while the site is static, Hugo can still introduce a lot of flexibility when it comes to generating pages.
+
+to be continued
