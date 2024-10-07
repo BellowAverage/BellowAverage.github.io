@@ -91,9 +91,9 @@ Follow the instruction and connect the project using `git` to GitHub. GitHub sup
 
 ## Constructing Site by Modifying the Template
 
-{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image.png" title="Before" width="100%" attr="">}}
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image.png" title="Before" width="40%" attr="">}}
 
-{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image%201.png" title="After" width="100%" attr="">}}
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image%201.png" title="After" width="40%" attr="">}}
 
 ### Add a Favicon
 
@@ -106,7 +106,7 @@ Follow the instruction and connect the project using `git` to GitHub. GitHub sup
 
 - The connection is then made and the Favicon is shown.
 
-{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image%202.png" title="After" width="100%" attr="">}}
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image%202.png" title="After" width="40%" attr="">}}
 
 ### Change Font
 
@@ -230,7 +230,7 @@ code {
 
 - This is how my notes look like:
 
-{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image.png" title="After" width="100%" attr="">}}
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image.png" title="After" width="40%" attr="">}}
 
 ### Migrate My Notes & Blogs to the Site
 
@@ -345,3 +345,80 @@ if __name__ == '__main__':
 ### Featured Articles Section
 
 - Featured Articles are basically selected notes from Notes & Blogs section.
+
+## Modify Article Viewer
+
+### Add a TOC
+I honestly don't quite like the original template's article viewer. I wish to add a table of content navbar that can navigate to certain part of the article.
+- To do so, I went to <code>layouts/_default/single.html</code>:
+```html
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    <!-- Other header content-->
+</header>
+
+<div class="main-container">
+    <aside class="sidebar">
+        {{ .TableOfContents }}
+    </aside>
+    <div class="content">
+        {{ .Content | safeHTML }}
+    </div>
+</div>
+```
+- Then go modifying css file:
+```css
+/* Reset default margins and paddings */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page header styling */
+.page-header {
+    padding: 20px;
+    background-color: #f5f5f5; /* Optional: Header background color */
+    border-bottom: 1px solid #ddd; /* Optional: Bottom border */
+    text-align: center; /* Center-align the title */
+}
+
+/* Main container styling */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar (TOC) styling */
+.sidebar {
+    width: 250px;          /* Fixed width for the sidebar */
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: #fafafa; /* Optional: Sidebar background color */
+    border-right: 1px solid #ddd; /* Optional: Right border */
+}
+
+/* Content area styling */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+}
+```
+The .md viewer goes from:
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image4.png" title="Before" width="40%" attr="">}}
+to:
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image5.png" title="After" width="40%" attr="">}}

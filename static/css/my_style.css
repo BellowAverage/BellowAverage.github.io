@@ -59,3 +59,55 @@ code {
 .card-title.quick-access-title {
     font-family: 'Georgia', serif;
 }
+
+
+/* Reset default margins and paddings */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page header styling */
+.page-header {
+    padding: 20px;
+    background-color: #f5f5f5; /* Optional: Header background color */
+    border-bottom: 1px solid #ddd; /* Optional: Bottom border */
+    text-align: center; /* Center-align the title */
+}
+
+/* Main container styling */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar (TOC) styling */
+.sidebar {
+    width: 250px;          /* Fixed width for the sidebar */
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: #fafafa; /* Optional: Sidebar background color */
+    border-right: 1px solid #ddd; /* Optional: Right border */
+}
+
+/* Content area styling */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
