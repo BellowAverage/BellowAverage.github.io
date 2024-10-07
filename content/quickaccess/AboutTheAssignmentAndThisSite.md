@@ -419,6 +419,6 @@ body, html {
 }
 ```
 The .md viewer goes from:
-{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image4.png" title="Before" width="40%" attr="">}}
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image 4.png" title="Before" width="40%" attr="">}}
 to:
-{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image5.png" title="After" width="40%" attr="">}}
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image 5.png" title="After" width="40%" attr="">}}
