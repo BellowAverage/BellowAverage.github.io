@@ -91,13 +91,9 @@ Follow the instruction and connect the project using `git` to GitHub. GitHub sup
 
 ## Constructing Site by Modifying the Template
 
-![Before](image.png)
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image.png" title="Before" width="100%" attr="">}}
 
-Before
-
-![After](image%201.png)
-
-After
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image%201.png" title="After" width="100%" attr="">}}
 
 ### Add a Favicon
 
@@ -110,7 +106,7 @@ After
 
 - The connection is then made and the Favicon is shown.
 
-![image.png](image%202.png)
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image%202.png" title="After" width="100%" attr="">}}
 
 ### Change Font
 
@@ -234,7 +230,7 @@ code {
 
 - This is how my notes look like:
 
-![image.png](image%203.png)
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image.png" title="After" width="100%" attr="">}}
 
 ### Migrate My Notes & Blogs to the Site
 

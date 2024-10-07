@@ -13,23 +13,13 @@ copyright = "Chris Wang ©"
   googleAnalytics = ""
 
   [[params.social]]
-    name = "Twitter"
-    link = "#"
-    icon = "fab fa-twitter"
-
-  [[params.social]]
     name = "Github"
-    link = "#"
+    link = "https://github.com/BellowAverage"
     icon = "fab fa-github"
 
   [[params.social]]
-    name = "Medium" 
-    link = "#"
-    icon = "fab fa-medium-m"
-
-  [[params.social]]
     name = "LinkedIn"
-    link = "#"
+    link = "https://www.linkedin.com/in/chris-wang-a4b1a9216/"
     icon = "fab fa-linkedin-in"
 
 
