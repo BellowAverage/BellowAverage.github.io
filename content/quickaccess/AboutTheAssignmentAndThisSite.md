@@ -230,7 +230,7 @@ code {
 
 - This is how my notes look like:
 
-{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image 3.png" title="After" width="40%" attr="">}}
+{{< figure src="https://raw.githubusercontent.com/BellowAverage/BellowAverage.github.io/main/content/quickaccess/image%203.png" title="After" width="40%" attr="">}}
 
 ### Migrate My Notes & Blogs to the Site
 
