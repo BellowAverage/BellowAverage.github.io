@@ -8,15 +8,15 @@
     --grey: #454963;
     --white: #fff;
     --offwhite: #fafafa;
-    --title: 'Times New Roman', sans-serif;
-    --summary: 'Times New Roman', sans-serif;
-    --headings: 'Times New Roman', sans-serif;
+    --title: 'Georgia', sans-serif;
+    --summary: 'Georgia', sans-serif;
+    --headings: 'Georgia', sans-serif;
     --h5: 0.83rem;
     --h6: 0.67rem;
 }
 
 .subheading {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Georgia', sans-serif;
 }
 
 a.heading.fs-2 {
