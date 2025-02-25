@@ -1,5 +1,5 @@
 ---
-title: "★ Technical Documentation of the Site (the Assignment)"
+title: "★ Technical Documentation of the Site"
 date: 2024-10-01
 lastmod: 2024-10-04
 draft: false

@@ -8,7 +8,7 @@ copyright = "Chris Wang ©"
 
 [params]
   name = "Chris Wang"
-  description = "MSDS 431 Data Engineering Assignment"
+  description = "This site documents my work & technical notes starting from 2020."
   initials = "CW"
   googleAnalytics = ""
 
