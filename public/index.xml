@@ -24,10 +24,10 @@
       <description></description>
     </item>
     <item>
-      <title>★ Reflection on Hugo and Web Apps Development</title>
-      <link>http://localhost:1313/quickaccess/thoughtsonhugoandwebappsdevelopment/</link>
-      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/quickaccess/thoughtsonhugoandwebappsdevelopment/</guid>
+      <title>★ View &amp; Download My Current CV (Chinese)</title>
+      <link>http://localhost:1313/quickaccess/viewanddownloadcvchinese/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickaccess/viewanddownloadcvchinese/</guid>
       <description></description>
     </item>
     <item>
@@ -38,7 +38,7 @@
       <description>Exploring algorithms, complexity analysis, recursion, time complexity, and data structure classification.</description>
     </item>
     <item>
-      <title>★ View &amp; Download my Current Traditional CV</title>
+      <title>★ View &amp; Download My Current CV (English)</title>
       <link>http://localhost:1313/quickaccess/viewanddownloadcv/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/quickaccess/viewanddownloadcv/</guid>
@@ -50,6 +50,13 @@
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/featuredarticles/gitgithubbasics/</guid>
       <description>Git and GitHub basics including setup, common commands, and GitHub setup procedures.</description>
+    </item>
+    <item>
+      <title>★ Reflection on Hugo and Web Apps Development</title>
+      <link>http://localhost:1313/quickaccess/thoughtsonhugoandwebappsdevelopment/</link>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickaccess/thoughtsonhugoandwebappsdevelopment/</guid>
+      <description></description>
     </item>
     <item>
       <title>Hadoop3xBasics</title>
